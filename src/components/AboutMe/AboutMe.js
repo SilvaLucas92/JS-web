@@ -27,7 +27,7 @@ const AboutMe = () => {
             direction={{base:'column', md:'row'}}
             justify='center'
             align='center'
-            data-aos="zoom-in"
+            // data-aos="zoom-in"
             >
                 <Box
                 mx='auto'
