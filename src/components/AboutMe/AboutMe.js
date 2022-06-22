@@ -27,18 +27,18 @@ const AboutMe = () => {
             mx='auto' 
             p={5}
             direction={{base:'column', md:'row'}}
-            align='center'
-            justify='center'
             data-aos="zoom-in"
             border='1px'
             borderColor='red'
+            alignItems='center'
+            pt={{base:'100px', md:'120px'}}
             >
                 <Box
+                textAlign='center' 
+                w={{md: '40%'}}
+                h='100%'
+                alignSelf='center'
                 mx='auto'
-                mt={{base:'100px', md:'50px'}}
-                border='1px'
-                borderColor='red' 
-                alignItems='center'
                 >
                     <Image 
                     src={person}
@@ -48,13 +48,12 @@ const AboutMe = () => {
                 </Box>   
                 <Box 
                 textAlign='center' 
-                w={{base: '100%', md: '50%'}}
-                // border='1px'
-                // borderColor='red'
-                p={{md:'20px'}}
+                w={{base: '100%', md: '60%'}}
+                h='100%'
+                alignSelf='center'
                 >
                     <Flex 
-                    align={'center'} 
+                    align='center'
                     justify='center' 
                     >
                         <Heading 
@@ -75,7 +74,7 @@ const AboutMe = () => {
                     <Text
                     color='#767d88' 
                     p={5}
-                    fontSize={{base: 'lg', md:'xl'}}
+                    fontSize={{base: 'lg', md:'lg', xl:'xl'}}
                     >
                     Psicologo egresado de la UBA - especializacion en psicoterapia sistemica. Movilizado por deseo de acompañar a las personas a lograr una mejor calidad de vida, atiendo en centros de salud integrales y en mi consultorio privado. me gusta leer, escribir y el cine. Convencido de que siempre en el problema se encuentra la solucion</Text>
                 </Box>

@@ -14,7 +14,7 @@ const Service = ({ oneData }) => {
             <Box
             textAlign='center'
             borderRadius={12}
-            p={2}
+            p={5}
             mx='auto'
             backgroundColor='#ffffff'
             boxShadow='lg'

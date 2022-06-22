@@ -8,7 +8,6 @@ const SingleContact = () => {
       <HStack
         h={50}
         my={5}
-        w='90%'
         mx='auto'
         border='1px'
         borderColor='#f1f1f1'
@@ -16,6 +15,7 @@ const SingleContact = () => {
         justify='space-between'
         backgroundColor='#ffffff'
         boxShadow='lg'
+        w='full'
         >
           <IconButton
           bg='#ffffff'
@@ -30,13 +30,13 @@ const SingleContact = () => {
         mx='auto'
         h={50}
         my={5}
-        w='90%'
         border='1px'
         borderColor='#f1f1f1'
         borderRadius={5}
         justify='space-between'
         backgroundColor='#ffffff'
         boxShadow='lg'
+        w='full'
         >
           <IconButton
           bg='#ffffff'
@@ -50,13 +50,13 @@ const SingleContact = () => {
         h={50}
         mx='auto'
         my={5}
-        w='90%'
         border='1px'
         borderColor='#f1f1f1'
         borderRadius={5}
         justify='space-between'
         backgroundColor='#ffffff'
         boxShadow='lg'
+        w='full'
         >
           <IconButton
           bg='#ffffff'

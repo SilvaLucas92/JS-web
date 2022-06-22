@@ -41,9 +41,9 @@ const Servicios = () => {
                   Nuestos servicios 
               </Heading>
           </Flex>
-          <Box
+          {/* <Box
           m={10}
-          >
+          > */}
             <Stack
             spacing={{
                 base: 10,
@@ -60,12 +60,13 @@ const Servicios = () => {
             }}
             gridRowGap={{
                 md: 10,
-            }}>  
+            }}
+            mt={10}>  
                 {data.map( oneData => {
                     return <Service key={oneData.id} oneData={oneData}/>
                 })}
             </Stack>
-          </Box>
+          {/* </Box> */}
         </Flex>
       </Box>
   )

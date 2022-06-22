@@ -51,7 +51,6 @@ const Contacto = () => {
         color='#ffffff' 
         my={5}
         fontSize={{base: 'lg', md:'xl'}}
-        w='90%'
         mx='auto'
         >Si tenes alguna duda y queres escribirnos, te dejamo tos los medio para que  te comuniques</Text>
         <SingleContact />           

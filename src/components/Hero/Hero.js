@@ -3,8 +3,10 @@ import {
     Box,
     chakra,
     Flex,
-    VStack } from '@chakra-ui/react';
-
+    VStack,
+    Button } from '@chakra-ui/react';
+import { ArrowForwardIcon, EmailIcon } from '@chakra-ui/icons';
+import { Link } from 'react-scroll';
 const Hero = () => {
   return (
 <Box  
@@ -104,6 +106,33 @@ id='hero'
             Anim aute id magna aliqua ad ad non deserunt sunt.
           </chakra.p>
         </VStack>
+        <Flex
+        direction={{base:'column', sm:'row'}}
+        mt={3}
+        justify='center'
+        >
+          <Button
+          m={2}
+          p={3}
+          w={{base:'full', sm:'40%', md:'35%', xl:'25%'}}
+          rightIcon={<ArrowForwardIcon />}
+          colorScheme='teal' 
+          variant='outline'
+          >
+            <Link to='about-me'>Conoceme</Link>
+          </Button>
+          <Button
+          m={2}
+          bg='rgb(49 151 149)'
+          p={3}
+          w={{base:'full', sm:'40%', md:'35%', xl:'25%'}}
+          rightIcon={<EmailIcon />}
+          colorScheme='teal'
+          variant='solid'
+          >
+            <Link to='contact-me'>Contactame</Link>
+          </Button>
+        </Flex>
       </Box>
     </Box>
   </Flex>
