@@ -1,6 +1,6 @@
 import { Button, Flex, Heading, HStack, useDisclosure, IconButton, Box } from '@chakra-ui/react';
 import { AiOutlineAlignRight,  AiOutlineClose} from 'react-icons/ai';
-import { Link, animateScroll } from 'react-scroll';
+import { Link } from 'react-scroll';
 import React from 'react'
 const Header = () => {
   const mobileNav = useDisclosure();
@@ -15,12 +15,16 @@ const Header = () => {
     >
       <Flex >
         <HStack
-          w='90%'
+          w={{base: '90%', md: '80%', lg:'70%'}}
           mx='auto'
           justify='space-between'
           align='center'
           p={5}>
-          <Heading display={{base: 'none', md: 'block'}}>
+          <Heading 
+          display={{base: 'none', md: 'block'}}
+          fontWeight="bold"
+          color="#2b2c34"
+          >
               Julio Silva
           </Heading>
           <Heading display={{base: 'block', md:'none'}}>
@@ -52,16 +56,6 @@ const Header = () => {
             </Button>
             <Button m={2} variant='link'>
             <Link
-              to='services'
-              spy={true} 
-              smooth={true} 
-              offset={100} 
-              duration={800}
-            >
-            Nuestros servicios</Link>
-            </Button>
-            <Button m={2} variant='link'>
-            <Link
               to='about-me'
               spy={true} 
               smooth={true} 
@@ -69,6 +63,16 @@ const Header = () => {
               duration={800}
             >
             About Me</Link>
+            </Button>
+            <Button m={2} variant='link'>
+            <Link
+              to='services'
+              spy={true} 
+              smooth={true} 
+              offset={100} 
+              duration={800}
+            >
+            Nuestros servicios</Link>
             </Button>
             <Button m={2} variant='link'>
             <Link
@@ -102,16 +106,6 @@ const Header = () => {
             </Button>
             <Button m={2} variant='link'>
             <Link
-              to='services'
-              spy={true} 
-              smooth={true} 
-              offset={100} 
-              duration={800}
-            >
-            Nuestros servicios</Link>
-            </Button>
-            <Button m={2} variant='link'>
-            <Link
               to='about-me'
               spy={true} 
               smooth={true} 
@@ -119,6 +113,16 @@ const Header = () => {
               duration={800}
             >
             About Me</Link>
+            </Button>
+            <Button m={2} variant='link'>
+            <Link
+              to='services'
+              spy={true} 
+              smooth={true} 
+              offset={100} 
+              duration={800}
+            >
+            Nuestros servicios</Link>
             </Button>
             <Button m={2} variant='link'>
             <Link

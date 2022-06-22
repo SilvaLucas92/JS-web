@@ -9,13 +9,12 @@ const Hero = () => {
   return (
 <Box  
 bg='#fffffe'
-
-
+id='hero'
 >
   <Flex  
   h='100vh' 
   w='90%' 
-  mx='auto' 
+  mx='auto'   
   maxW="7xl"  
   justify='center'
   align='center'>
@@ -60,7 +59,7 @@ bg='#fffffe'
           fontSize={{
             base: "4xl",
             sm: "5xl",
-            md: "6xl",
+            md: "8xl",
           }}
           letterSpacing="tight"
           lineHeight="short"
@@ -72,6 +71,11 @@ bg='#fffffe'
             display={{
             base: "block",
             }}
+            fontSize={{
+            base: "3xl",
+            sm: "4xl",
+            md: "6xl",
+          }}
             color="#319795"
             >
                 Psicologo Clinico

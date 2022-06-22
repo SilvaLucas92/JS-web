@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import {   
     Flex,
     Heading,
@@ -7,57 +7,68 @@ import {
     Image
     } from '@chakra-ui/react';
 import person from './person.jpg'
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 const AboutMe = () => {
+
+  useEffect(() => {
+    Aos.init({ duration:2000 })
+  }, [])
   return (
     <Box
     bg='#f7fafc'
     id='about-me'
     >
-        <Flex 
-        h={{base:'130vh', md:'130vh'}}
-        w='90%' 
-        mx='auto' 
-        p={5}
-        direction={{base:'column', md:'row'}}
-        justify='center'
-        align='center'
-        >
-            <Box
-            mx='auto'
+            <Flex 
+            h={{base: '100%', md: '150vh'}}
+            w={{base: '90%', md: '80%', lg:'70%'}}
+            mx='auto' 
+            p={5}
+            direction={{base:'column', md:'row'}}
+            justify='center'
+            align='center'
+            data-aos="zoom-in"
             >
-                <Image 
-                src={person}
-                boxSize='350px'
-                />
-            </Box>    
-            <Box 
-            textAlign='center' 
-            w={{base: '100%', md: '50%'}} 
-            >
-                <Flex 
-                align={'center'} 
-                justify='center' 
-                my={4}
+                <Box
+                mx='auto'
+                mt={{base:'160px', md:'5px'}}
                 >
-                    <Heading 
-                    color='#2d3748' 
-                    textAlign='center' 
-                    fontSize='2xl'
-                    letter-spacing=' -0.015em'
-                    line-height= '1.24'
-                    font-size= '2rem'
-                    fontWeight='bold' 
+                    <Image 
+                    src={person}
+                    boxSize='350px'/>
+                </Box>   
+                <Box 
+                textAlign='center' 
+                w={{base: '100%', md: '50%'}}
+                >
+                    <Flex 
+                    align={'center'} 
+                    justify='center' 
+                    my={4}
                     >
-                        Conoceme 
-                    </Heading>
-                </Flex>
-                <Text 
-                color='#767d88' 
-                mb={{base: '5px', md:'1px'}}
-                >
-                Psicologo egresado de la UBA - especializacion en psicoterapia sistemica. Movilizado por deseo de acompañar a las personas a lograr una mejor calidad de vida, atiendo en centros de salud integrales y en mi consultorio privado. me gusta leer, escribir y el cine. Convencido de que siempre en el problema se encuentra la solucion</Text>
-            </Box>
-        </Flex>
+                        <Heading 
+                        color='#2d3748' 
+                        textAlign='center' 
+                        letter-spacing=' -0.015em'
+                        line-height= '1.24'
+                        fontSize={{
+                        base: "2xl",
+                        md: "3xl",
+                        lg: '4xl'
+                        }}
+                        fontWeight='bold' 
+                        >
+                            Conoceme 
+                        </Heading>
+                    </Flex>
+                    <Text
+                    color='#767d88' 
+                    mb={{base: '5px', md:'1px'}}
+                    p={5}
+                    >
+                    Psicologo egresado de la UBA - especializacion en psicoterapia sistemica. Movilizado por deseo de acompañar a las personas a lograr una mejor calidad de vida, atiendo en centros de salud integrales y en mi consultorio privado. me gusta leer, escribir y el cine. Convencido de que siempre en el problema se encuentra la solucion</Text>
+                </Box>
+            </Flex>
     </Box>
   )
 }

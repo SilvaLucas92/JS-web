@@ -1,6 +1,6 @@
-import { Flex, Icon, Text, IconButton } from '@chakra-ui/react'
+import { Flex, Icon, Text } from '@chakra-ui/react'
 import React from 'react'
-import { AiFillHeart, AiOutlineArrowUp } from 'react-icons/ai'
+import { AiFillHeart } from 'react-icons/ai'
 
 const Footer = () => {
   return (
@@ -10,6 +10,7 @@ const Footer = () => {
     w='90%'
     mx='auto'
     h={50}
+    backgroundColor='#ffffff'
     >
         <Text
         alignItems='center'

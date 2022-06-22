@@ -1,102 +1,58 @@
-import { Heading, IconButton, Flex, Text, Box, HStack, Center } from '@chakra-ui/react'
-import { AiOutlineMail } from 'react-icons/ai'
-import { BsWhatsapp, BsLinkedin } from 'react-icons/bs'
+import { Heading, IconButton, Flex, Text, Box, Center } from '@chakra-ui/react'
 import { AiOutlineArrowUp } from 'react-icons/ai'
 import { animateScroll } from 'react-scroll';
-import React from 'react'
+import React, { useEffect } from 'react';
+import SingleContact from './SingleContact/SingleContact';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const Contacto = () => {
   const scrollToTop = () => {
     animateScroll.scrollToTop();
   }
+  useEffect(() => {
+    Aos.init({ duration:2000 })
+  }, [])  
   return (
     <Box
-    bg='#f7fafc'
+    bg='rgb(49 151 149)'
     id='contact-me'>
       <Flex 
-      w='90%' 
+      w={{base: '90%', md: '80%', lg:'70%'}}
       mx='auto' 
       justify='center'
       direction='column'
       p={5}
-      h='130vh'
+      h='120vh'
+      data-aos="zoom-in"
       >
-        <Flex align={'center'} justify='center' my={4}>
+        <Flex align={'center'} justify='center' mt={8}>
           <Heading 
-          color='#2d3748' 
+          color='#ffffff'
           textAlign='center' 
-          fontSize='2xl'
+          fontSize={{
+                    base: "2xl",
+                    md: "3xl",
+                    lg: '4xl'
+                    }}
           letter-spacing=' -0.015em'
           line-height= '1.24'
           font-size= '2rem'
-          fontWeight='bold' 
+          fontWeight='bold'
+          mt={{base:'160px', md:'5px'}}
           >
             Contacto 
           </Heading>
         </Flex>
-        <Text textAlign='center' color='#767d88' mb={{base: '5px', md:'1px'}}>Si tenes alguna duda y queres escribirnos, te dejamo tos los medio para que  te comuniques</Text>
-        <HStack
-        h={50}
-        my={5}
-        w='90%'
-        mx='auto'
-        border='1px'
-        borderColor='#f1f1f1'
-        borderRadius={5}
-        justify='space-between'
-        backgroundColor='#ffffff'
-        boxShadow='lg'
-        >
-          <IconButton
-          bg='#ffffff'
-          icon={<BsWhatsapp />}
-          color='#767d88'>
-          </IconButton>
-          <Text color='#767d88' pr='20px'> +5411 70447685</Text>
-        </HStack>
-        <HStack
-        mx='auto'
-        h={50}
-        my={5}
-        w='90%'
-        border='1px'
-        borderColor='#f1f1f1'
-        borderRadius={5}
-        justify='space-between'
-        backgroundColor='#ffffff'
-        boxShadow='lg'
-        >
-          <IconButton
-          bg='#ffffff'
-          icon={<AiOutlineMail />}
-          color='#767d88'>
-          </IconButton>
-          <Text color='#767d88' pr='20px'> Julio.silva@gmail.com</Text>
-        </HStack>
-        <HStack
-        h={50}
-        mx='auto'
-        my={5}
-        w='90%'
-        border='1px'
-        borderColor='#f1f1f1'
-        borderRadius={5}
-        justify='space-between'
-        backgroundColor='#ffffff'
-        boxShadow='lg'
-        >
-          <IconButton
-          bg='#ffffff'
-          icon={<BsLinkedin />}
-          color='#767d88'>
-          </IconButton>
-          <Text color='#767d88' pr='20px'>Julio Silva Linkedin</Text>
-        </HStack>
+        <Text textAlign='center' color='#ffffff' my={5}>Si tenes alguna duda y queres escribirnos, te dejamo tos los medio para que  te comuniques</Text>
+        <SingleContact />           
       </Flex>
-      <Center pb={10}>
+      <Center p={10}>
         <IconButton
-        icon= {<AiOutlineArrowUp />}
-        onClick={scrollToTop}/>
+        icon= {<AiOutlineArrowUp  />}
+        onClick={scrollToTop}
+        backgroundColor='#ffffff'
+        />
       </Center>
     </Box>
   )
