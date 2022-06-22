@@ -39,7 +39,7 @@ const Contacto = () => {
           line-height= '1.24'
           font-size= '2rem'
           fontWeight='bold'
-          mt={{base:'160px', md:'5px'}}
+          mt={{base:'100px', md:'5px'}}
           >
             Contacto 
           </Heading>

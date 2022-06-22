@@ -19,7 +19,7 @@ const Servicios = () => {
       justify='center'
       direction='column'
       p={5}
-      h={{base: '100%', md: '150vh'}}
+      h={{base: '100%', md: '120vh'}}
       >
           <Flex align={'center'} justify='center' my={4}>
               <Heading 
@@ -34,7 +34,7 @@ const Servicios = () => {
               line-height= '1.24'
               font-size= '2rem'
               fontWeight='bold' 
-              mt={{base:'160px', md:'0px'}}
+              mt={{base:'100px', md:'0px'}}
               >
                   Nuestos servicios 
               </Heading>

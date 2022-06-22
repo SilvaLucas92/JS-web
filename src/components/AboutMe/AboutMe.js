@@ -20,18 +20,19 @@ const AboutMe = () => {
     id='about-me'
     >
             <Flex 
-            h={{base: '100%', md: '150vh'}}
+            h={{base: '100%', md: '120vh'}}
             w={{base: '90%', md: '80%', lg:'70%'}}
             mx='auto' 
             p={5}
             direction={{base:'column', md:'row'}}
             justify='center'
             align='center'
-            // data-aos="zoom-in"
+            data-aos="zoom-in"
             >
                 <Box
                 mx='auto'
-                mt={{base:'160px', md:'5px'}}
+                mt={{base:'100px', md:'50px'}}
+                // data-Aos='fade-right'
                 >
                     <Image 
                     src={person}
@@ -40,11 +41,13 @@ const AboutMe = () => {
                 <Box 
                 textAlign='center' 
                 w={{base: '100%', md: '50%'}}
+                // data-Aos='fade-left'
                 >
                     <Flex 
                     align={'center'} 
                     justify='center' 
                     my={4}
+
                     >
                         <Heading 
                         color='#2d3748' 

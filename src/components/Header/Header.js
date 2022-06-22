@@ -1,18 +1,44 @@
 import { Button, Flex, Heading, HStack, useDisclosure, IconButton, Box } from '@chakra-ui/react';
 import { AiOutlineAlignRight,  AiOutlineClose} from 'react-icons/ai';
 import { Link } from 'react-scroll';
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 const Header = () => {
   const mobileNav = useDisclosure();
+  const [show, setShow] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+  const [showMenu, setShowMenu] = useState(false);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      window.addEventListener('scroll', controlNavbar);
+      return () => {
+        window.removeEventListener('scroll', controlNavbar);
+      };
+    }
+  }, [lastScrollY]);
+
+  const controlNavbar = () => {
+    if (typeof window !== 'undefined') { 
+      if (window.scrollY > lastScrollY) {
+        setShow(false); 
+      } else {
+        setShow(true);  
+      }
+      setLastScrollY(window.scrollY); 
+    }
+  };
+
   return (
     <Box
+    as='header'
     w='100%'
     position="fixed"
-    top={0}
+    top={show ? 0 : '-80px'}
     bg='#ffffff'
     borderBottomWidth={1}
-    zIndex= '1'
+    zIndex= '99'
     overflow='hidden'
+    backdropFilter="saturate(180%) blur(5px)"
     >
       <Flex >
         <HStack
@@ -35,8 +61,9 @@ const Header = () => {
             display={{md:'none'}}
           >
             <IconButton
-              icon={!mobileNav.isOpen? <AiOutlineAlignRight /> : <AiOutlineClose />} 
-              onClick={!mobileNav.isOpen? mobileNav.onOpen : mobileNav.onClose}
+              icon={!showMenu? <AiOutlineAlignRight /> : <AiOutlineClose />} 
+              // onClick={!mobileNav.isOpen? mobileNav.onOpen : mobileNav.onClose}
+              onClick={() => {return !showMenu? setShowMenu(true) : setShowMenu(false)}}
               fontSize={25}
             />
           </Flex>
@@ -46,7 +73,7 @@ const Header = () => {
             justify='center'
             align='center'
           >
-            <Button m={2} variant='link'>
+            <Button m={2} variant='link' >
               <Link
               to='hero'
               spy={true} 
@@ -89,20 +116,21 @@ const Header = () => {
         </HStack>
       </Flex>
       <Flex
-          display={mobileNav.isOpen? 'flex' : 'none'}
+          display={showMenu? 'flex' : 'none'}
           direction='column'
           w='90%'
           mx='auto'
           align='center'
           bg='#ffffff'
           >
-            <Button m={2} variant='link' onClick={mobileNav.onClose}>
+            <Button m={2} variant='link' >
               <Link
               to='hero'
               spy={true} 
               smooth={true} 
               offset={100} 
               duration={800}
+              onClick={() => {return setShowMenu(false)}}
               >Inicio</Link>
             </Button>
             <Button m={2} variant='link'>
@@ -112,16 +140,18 @@ const Header = () => {
               smooth={true} 
               offset={100} 
               duration={800}
+              onClick={() => {return setShowMenu(false)}}
             >
             About Me</Link>
             </Button>
-            <Button m={2} variant='link'>
+            <Button m={2} variant='link' >
             <Link
               to='services'
               spy={true} 
               smooth={true} 
               offset={100} 
               duration={800}
+              onClick={() => {return setShowMenu(false)}}
             >
             Nuestros servicios</Link>
             </Button>
@@ -132,6 +162,7 @@ const Header = () => {
               smooth={true} 
               offset={100} 
               duration={800}
+              onClick={() => {return setShowMenu(false)}}
             >
             Contacto</Link>
             </Button>
