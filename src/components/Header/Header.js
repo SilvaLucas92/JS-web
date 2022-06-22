@@ -1,21 +1,11 @@
-import { Button, Flex, Heading, HStack, useDisclosure, IconButton, Box } from '@chakra-ui/react';
+import { Button, Flex, Heading, HStack,  IconButton, Box } from '@chakra-ui/react';
 import { AiOutlineAlignRight,  AiOutlineClose} from 'react-icons/ai';
 import { Link } from 'react-scroll';
 import React, { useState, useEffect } from 'react'
 const Header = () => {
-  const mobileNav = useDisclosure();
   const [show, setShow] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
   const [showMenu, setShowMenu] = useState(false);
-
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      window.addEventListener('scroll', controlNavbar);
-      return () => {
-        window.removeEventListener('scroll', controlNavbar);
-      };
-    }
-  }, [lastScrollY]);
 
   const controlNavbar = () => {
     if (typeof window !== 'undefined') { 
@@ -27,18 +17,28 @@ const Header = () => {
       setLastScrollY(window.scrollY); 
     }
   };
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      window.addEventListener('scroll', controlNavbar);
+      return () => {
+        window.removeEventListener('scroll', controlNavbar);
+      };
+    }
+  }, [lastScrollY]);
+
 
   return (
     <Box
     as='header'
-    w='100%'
+    w='full'
     position="fixed"
     top={show ? 0 : '-80px'}
     bg='#ffffff'
     borderBottomWidth={1}
     zIndex= '99'
     overflow='hidden'
-    backdropFilter="saturate(180%) blur(5px)"
+    border='1px'
+    borderColor='red'
     >
       <Flex >
         <HStack
@@ -62,7 +62,6 @@ const Header = () => {
           >
             <IconButton
               icon={!showMenu? <AiOutlineAlignRight /> : <AiOutlineClose />} 
-              // onClick={!mobileNav.isOpen? mobileNav.onOpen : mobileNav.onClose}
               onClick={() => {return !showMenu? setShowMenu(true) : setShowMenu(false)}}
               fontSize={25}
             />
