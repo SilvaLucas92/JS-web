@@ -105,34 +105,37 @@ id='hero'
           >
             Anim aute id magna aliqua ad ad non deserunt sunt.
           </chakra.p>
+          <Flex
+          direction={{base:'column', sm:'row'}}
+          mt={3}
+          justify='center'
+          w='full'
+          >
+            <Button
+            m={2}
+            p={3}
+            w={{base:'100%', sm:'40%', md:'35%', xl:'25%'}}
+            rightIcon={<ArrowForwardIcon />}
+            colorScheme='teal' 
+            variant='outline'
+            mx={{base: 'auto', md: '2', xl:'5' }}
+            >
+              <Link to='about-me'>Conoceme</Link>
+            </Button>
+            <Button
+            m={2}
+            bg='rgb(49 151 149)'
+            p={3}
+            w={{base:'100%', sm:'40%', md:'35%', xl:'25%'}}
+            rightIcon={<EmailIcon />}
+            colorScheme='teal'
+            variant='solid'
+            mx={{base: 'auto', md: '2', xl:'5'}}
+            >
+              <Link to='contact-me'>Contactame</Link>
+            </Button>
+          </Flex>          
         </VStack>
-        <Flex
-        direction={{base:'column', sm:'row'}}
-        mt={3}
-        justify='center'
-        >
-          <Button
-          m={2}
-          p={3}
-          w={{base:'full', sm:'40%', md:'35%', xl:'25%'}}
-          rightIcon={<ArrowForwardIcon />}
-          colorScheme='teal' 
-          variant='outline'
-          >
-            <Link to='about-me'>Conoceme</Link>
-          </Button>
-          <Button
-          m={2}
-          bg='rgb(49 151 149)'
-          p={3}
-          w={{base:'full', sm:'40%', md:'35%', xl:'25%'}}
-          rightIcon={<EmailIcon />}
-          colorScheme='teal'
-          variant='solid'
-          >
-            <Link to='contact-me'>Contactame</Link>
-          </Button>
-        </Flex>
       </Box>
     </Box>
   </Flex>

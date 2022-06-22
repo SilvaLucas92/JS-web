@@ -19,7 +19,7 @@ const Service = ({ oneData }) => {
             backgroundColor='#ffffff'
             boxShadow='lg'
             w='100%'
-            data-Aos={oneData.id % 2 === 0 ? 'fade-left' : 'fade-right'}
+            // data-Aos={oneData.id % 2 === 0 ? 'fade-left' : 'fade-right'}
             >
                 <Heading 
                 fontSize='2xl'

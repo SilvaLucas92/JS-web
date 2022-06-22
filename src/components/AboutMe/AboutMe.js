@@ -27,7 +27,7 @@ const AboutMe = () => {
             mx='auto' 
             p={5}
             direction={{base:'column', md:'row'}}
-            data-aos="zoom-in"
+            // data-aos="zoom-in"
             border='1px'
             borderColor='red'
             alignItems='center'
@@ -66,7 +66,8 @@ const AboutMe = () => {
                         md: "3xl",
                         lg: '4xl'
                         }}
-                        fontWeight='bold' 
+                        fontWeight='bold'
+                        mt={{md:'5px'}}
                         >
                             Conoceme 
                         </Heading>

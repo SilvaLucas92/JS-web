@@ -24,7 +24,7 @@ const Contacto = () => {
       direction='column'
       p={5}
       h={{base: '100%', md: '120vh'}}
-      data-aos="zoom-in"
+      // data-aos="zoom-in"
       border='1px'
       borderColor='red'
       >

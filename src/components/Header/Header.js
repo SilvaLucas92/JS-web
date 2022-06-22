@@ -1,4 +1,4 @@
-import { Button, Flex, Heading, HStack,  IconButton, Box } from '@chakra-ui/react';
+import { Button, Flex, Heading, HStack,  IconButton, Stack } from '@chakra-ui/react';
 import { AiOutlineAlignRight,  AiOutlineClose} from 'react-icons/ai';
 import { Link } from 'react-scroll';
 import React, { useState, useEffect } from 'react'
@@ -28,15 +28,14 @@ const Header = () => {
 
 
   return (
-    <Box
+    <Stack
     as='header'
-    w='full'
+    w='100%'
     position="fixed"
-    top={show ? 0 : '-80px'}
+    top={show ? 0 : '-100px'}
     bg='#ffffff'
     borderBottomWidth={1}
     zIndex= '99'
-    overflow='hidden'
     border='1px'
     borderColor='red'
     >
@@ -117,10 +116,12 @@ const Header = () => {
       <Flex
           display={showMenu? 'flex' : 'none'}
           direction='column'
-          w='90%'
+          w='100%'
           mx='auto'
           align='center'
           bg='#ffffff'
+          border='1px'
+    borderColor='red'
           >
             <Button my={8} variant='link' size='lg'>
               <Link
@@ -166,7 +167,7 @@ const Header = () => {
             Contacto</Link>
             </Button>
         </Flex> 
-    </Box> 
+    </Stack> 
   )
 }
 
