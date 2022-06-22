@@ -11,7 +11,8 @@ const Header = () => {
     top={0}
     bg='#ffffff'
     borderBottomWidth={1}
-    zIndex= '3'
+    zIndex= '1'
+    overflow='hidden'
     >
       <Flex >
         <HStack
