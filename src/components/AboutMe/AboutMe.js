@@ -14,8 +14,10 @@ const AboutMe = () => {
   useEffect(() => {
     Aos.init({ duration:2000 })
   }, [])
+  
   return (
     <Box
+    as='section'
     bg='#f7fafc'
     id='about-me'
     >
@@ -25,29 +27,35 @@ const AboutMe = () => {
             mx='auto' 
             p={5}
             direction={{base:'column', md:'row'}}
-            justify='center'
             align='center'
+            justify='center'
             data-aos="zoom-in"
+            border='1px'
+            borderColor='red'
             >
                 <Box
                 mx='auto'
                 mt={{base:'100px', md:'50px'}}
-                // data-Aos='fade-right'
+                border='1px'
+                borderColor='red' 
+                alignItems='center'
                 >
                     <Image 
                     src={person}
-                    boxSize='350px'/>
+                    boxSize={{base: '350px', md: '400px'}}
+
+                    />
                 </Box>   
                 <Box 
                 textAlign='center' 
                 w={{base: '100%', md: '50%'}}
-                // data-Aos='fade-left'
+                // border='1px'
+                // borderColor='red'
+                p={{md:'20px'}}
                 >
                     <Flex 
                     align={'center'} 
                     justify='center' 
-                    my={4}
-
                     >
                         <Heading 
                         color='#2d3748' 
@@ -66,8 +74,8 @@ const AboutMe = () => {
                     </Flex>
                     <Text
                     color='#767d88' 
-                    mb={{base: '5px', md:'1px'}}
                     p={5}
+                    fontSize={{base: 'lg', md:'xl'}}
                     >
                     Psicologo egresado de la UBA - especializacion en psicoterapia sistemica. Movilizado por deseo de acompañar a las personas a lograr una mejor calidad de vida, atiendo en centros de salud integrales y en mi consultorio privado. me gusta leer, escribir y el cine. Convencido de que siempre en el problema se encuentra la solucion</Text>
                 </Box>

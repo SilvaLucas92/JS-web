@@ -12,12 +12,14 @@ bg='#fffffe'
 id='hero'
 >
   <Flex  
-  h='100vh' 
+  h={{base: '100vh', md: '120vh'}}
   w='90%' 
   mx='auto'   
   maxW="7xl"  
   justify='center'
-  align='center'>
+  align='center'
+  border='1px'
+  borderColor='red'>
     <Box
       pos="relative"
       pb={{
@@ -57,8 +59,8 @@ id='hero'
         >
         <chakra.h1
           fontSize={{
-            base: "4xl",
-            sm: "5xl",
+            base: "5xl",
+            sm: "6xl",
             md: "8xl",
           }}
           letterSpacing="tight"
@@ -72,8 +74,8 @@ id='hero'
             base: "block",
             }}
             fontSize={{
-            base: "3xl",
-            sm: "4xl",
+            base: "4xl",
+            sm: "xl",
             md: "6xl",
           }}
             color="#319795"

@@ -20,6 +20,8 @@ const Servicios = () => {
       direction='column'
       p={5}
       h={{base: '100%', md: '120vh'}}
+      border='1px'
+      borderColor='red'
       >
           <Flex align={'center'} justify='center' my={4}>
               <Heading 

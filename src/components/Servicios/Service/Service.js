@@ -18,17 +18,20 @@ const Service = ({ oneData }) => {
             mx='auto'
             backgroundColor='#ffffff'
             boxShadow='lg'
-            w='full'
+            w='100%'
             data-Aos={oneData.id % 2 === 0 ? 'fade-left' : 'fade-right'}
             >
                 <Heading 
-                fontSize='1xl'
+                fontSize='2xl'
                 mb={2}
                 color='#898f98'
                 >
                     { oneData.title }
                 </Heading>
-                <Text color='#818792'>
+                <Text 
+                color='#818792'
+                fontSize={{base: 'md', md:'xl'}}
+                >
                     { oneData.description } 
                 </Text>
             </Box>  

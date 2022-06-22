@@ -123,7 +123,7 @@ const Header = () => {
           align='center'
           bg='#ffffff'
           >
-            <Button m={2} variant='link' >
+            <Button my={8} variant='link' size='lg'>
               <Link
               to='hero'
               spy={true} 
@@ -133,7 +133,7 @@ const Header = () => {
               onClick={() => {return setShowMenu(false)}}
               >Inicio</Link>
             </Button>
-            <Button m={2} variant='link'>
+            <Button my={8} variant='link' size='lg'>
             <Link
               to='about-me'
               spy={true} 
@@ -144,7 +144,7 @@ const Header = () => {
             >
             About Me</Link>
             </Button>
-            <Button m={2} variant='link' >
+            <Button my={8} variant='link' size='lg'>
             <Link
               to='services'
               spy={true} 
@@ -155,7 +155,7 @@ const Header = () => {
             >
             Nuestros servicios</Link>
             </Button>
-            <Button m={2} variant='link'>
+            <Button my={8} variant='link' size='lg'>
             <Link
               to='contact-me'
               spy={true} 

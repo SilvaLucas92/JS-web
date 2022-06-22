@@ -23,8 +23,10 @@ const Contacto = () => {
       justify='center'
       direction='column'
       p={5}
-      h='120vh'
+      h={{base: '100%', md: '120vh'}}
       data-aos="zoom-in"
+      border='1px'
+      borderColor='red'
       >
         <Flex align={'center'} justify='center' mt={8}>
           <Heading 
@@ -44,7 +46,14 @@ const Contacto = () => {
             Contacto 
           </Heading>
         </Flex>
-        <Text textAlign='center' color='#ffffff' my={5}>Si tenes alguna duda y queres escribirnos, te dejamo tos los medio para que  te comuniques</Text>
+        <Text 
+        textAlign='center' 
+        color='#ffffff' 
+        my={5}
+        fontSize={{base: 'lg', md:'xl'}}
+        w='90%'
+        mx='auto'
+        >Si tenes alguna duda y queres escribirnos, te dejamo tos los medio para que  te comuniques</Text>
         <SingleContact />           
       </Flex>
       <Center p={10}>
