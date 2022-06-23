@@ -72,7 +72,8 @@ const Contacto = () => {
         backgroundColor='#ffffff'
         colorScheme='teal' 
         variant='outline'
-        fontSize='20px'
+        fontSize='25px'
+        isRound='true'
         />
       </Center>
     </Box>

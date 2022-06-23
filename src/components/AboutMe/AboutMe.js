@@ -30,11 +30,11 @@ const AboutMe = () => {
             align='center'
             justify='center'
             py={{base:'100px', md:'140px'}}
+            data-aos="fade-up"
             >
               <Box
               h='100%'
               mx='auto'
-              data-aos="fade-right"
               >
                 <Image 
                 src= {ya}
@@ -44,7 +44,6 @@ const AboutMe = () => {
               </Box>   
               <Box 
               h='100%'
-              data-aos="fade-left"
               >
               <Flex 
               align='center'
