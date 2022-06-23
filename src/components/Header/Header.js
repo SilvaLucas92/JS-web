@@ -17,6 +17,7 @@ const Header = () => {
       setLastScrollY(window.scrollY); 
     }
   };
+
   useEffect(() => {
     if (typeof window !== 'undefined') {
       window.addEventListener('scroll', controlNavbar);
@@ -26,24 +27,21 @@ const Header = () => {
     }
   }, [lastScrollY]);
 
-
   return (
     <Stack
     as='header'
     w='100%'
-    position="fixed"
     top={show ? 0 : '-100px'}
     left='0'
     right='0'
     bg='#ffffff'
     borderBottomWidth={1}
-    zIndex= '99'
-    border='1px'
-    borderColor='red'
+    position='fixed'
+    zIndex='1'
     >
       <Flex >
         <HStack
-          w={{base: '90%', md: '80%', lg:'70%'}}
+          w={{base: '90%', md: '80%'}}
           mx='auto'
           justify='space-between'
           align='center'
@@ -69,6 +67,7 @@ const Header = () => {
           </Flex>
 
           <Flex
+            as='nav'
             display={{base:'none', md:"flex"}}
             justify='center'
             align='center'
@@ -107,14 +106,13 @@ const Header = () => {
         </HStack>
       </Flex>
       <Flex
+          as='nav'
           display={showMenu? 'flex' : 'none'}
           direction='column'
           w='100%'
           mx='auto'
           align='center'
           bg='#ffffff'
-          border='1px'
-    borderColor='red'
           >
             <Button my={8} variant='link' size='lg'>
             <Link

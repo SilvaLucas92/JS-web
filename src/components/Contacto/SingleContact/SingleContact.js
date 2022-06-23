@@ -7,33 +7,36 @@ const SingleContact = () => {
   return (
     <>
       <HStack
-        h={{base:'50px', md:'55px', xl:'60px'}}
-        my={5}
-        mx='auto'
-        p={5}
-        borderRadius={5}
-        justify='space-between'
-        backgroundColor='#ffffff'
-        boxShadow='lg'
-        w='full'
+      h={{base:'50px', sm:'55px', xl:'60px'}}
+      my={5}
+      mx='auto'
+      p={5}
+      borderRadius={5}
+      justify='space-between'
+      backgroundColor='#ffffff'
+      boxShadow='lg'
+      w='full'
+      >
+        <IconButton
+        as='a'
+        href='https://wa.link/9fq5vs'
+        bg='#ffffff'
+        target='_blank'
+        icon={<BsWhatsapp />}
+        color='#767d88'
+        fontSize={{base:'20px', md:'25px'}}
+        lineHeight= '1.24'
+        fontWeight='bold'
+        />
+        <Text 
+        fontSize={{base:'sm', sm: 'md', md:'lg'}} 
+        color='#767d88' 
         >
-          <IconButton
-          as='a'
-          href='https://wa.link/9fq5vs'
-          bg='#ffffff'
-          target='_blank'
-          icon={<BsWhatsapp />}
-          color='#767d88'
-          fontSize={{base:'18px', md:'22px'}}
-          >
-          </IconButton>
-          <Text 
-          fontSize={{base:'md', md:'lg'}} 
-          color='#767d88' pr='20px'
-          > +5411 70447685</Text>
+          +5411 70447685
+        </Text>
         </HStack>
         <HStack
-        h={{base:'50px', md:'55px', xl:'60px'}}
+        h={{base:'50px', sm:'55px', xl:'60px'}}
         my={5}
         mx='auto'
         p={5}
@@ -49,36 +52,19 @@ const SingleContact = () => {
           bg='#ffffff'
           icon={<AiOutlineMail />}
           color='#767d88'
-          fontSize={{base:'18px', md:'22px'}}
-          >
-          </IconButton>
-          <Text  fontSize={{base:'md', md:'lg'}}  color='#767d88' pr='20px'> Julio.silva@gmail.com</Text>
-        </HStack>
-        <HStack
-        h={{base:'50px', md:'55px', xl:'60px'}}
-        my={5}
-        mx='auto'
-        p={5}
-        borderRadius={5}
-        justify='space-between'
-        backgroundColor='#ffffff'
-        boxShadow='lg'
-        w='full'
-        >
-          <IconButton
-          bg='#ffffff'
-          icon={<AiOutlineLinkedin />}
-          color='#767d88'
-          fontSize={{base:'18px', md:'22px'}}
-          >
-          </IconButton>
-          <Text 
+          fontSize={{base:'20px', md:'25px'}}
+          lineHeight= '1.24'
+          fontWeight='bold'
+          />
+          <Text  
+          fontSize={{base:'sm', sm: 'md', md:'lg'}} 
           color='#767d88' 
-          pr='20px'
-          fontSize={{base:'md', md:'lg'}} >Julio Silva Linkedin</Text>
+          > 
+            Julio.silva@gmail.com
+          </Text>
         </HStack>
         <HStack
-        h={{base:'50px', md:'55px', xl:'60px'}}
+        h={{base:'50px', sm:'55px', xl:'60px'}}
         my={5}
         mx='auto'
         p={5}
@@ -94,13 +80,16 @@ const SingleContact = () => {
           href='https://goo.gl/maps/826GDXv1k4fcTtor7'
           icon={<GoLocation />}
           color='#767d88'
-          fontSize={{base:'18px', md:'22px'}}
-          >
-          </IconButton>
+          fontSize={{base:'20px', md:'25px'}}
+          lineHeight= '1.24'
+          fontWeight='bold'
+          />
           <Text 
+          fontSize={{base:'sm', sm: 'md', md:'lg'}} 
           color='#767d88' 
-          pr='20px'
-          fontSize={{base:'md', md:'lg'}} >Direccin de consultorio</Text>
+          >
+            Direccion de consultorio
+          </Text>
         </HStack>
     </>
   )

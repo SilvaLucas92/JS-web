@@ -13,73 +13,69 @@ import Service from './Service/Service';
 const Servicios = () => {
   return (
     <Box
+    as='section'
     id='services'
     >
-      <Flex 
-      w={{base: '90%', md: '80%'}}
-      mx='auto' 
-      justify='center'
-      direction='column'
-      p={5}
-      h={{base: '100%', md: '150vh'}}
-      border='1px'
-      borderColor='red'
-      >
-          <VStack align={'center'} justify='center' my={4}>
-              <Heading
-              as='h2'
-              color='#2d3748' 
-              textAlign='center' 
-              fontSize={{
-                      base: "2xl",
-                      md: "3xl",
-                      lg: '4xl'
-                      }}
-              letterSpacing=' -0.015em'
-              lineHeight= '1.24'
-              fontWeight='bold' 
-              mt={{base:'100px', md:'0px'}}
-              mb={5}
-              >
-                  Nuestos servicios 
-                  <Box borderTop='2px' color='rgb(49 151 149)' w='50%' mx='auto' mt={2} />
-              </Heading>
-              <Text
-              opacity='0.7'
-              fontSize={18}
-              mb={15}
-              >
-                Atención Online y presencial a Niños, Adolescentes y Adultos, Familias y Parejas con orientación Sistémica. 
-              </Text>
-          </VStack>
-          {/* <Box
-          m={10}
-          > */}
+        <Flex 
+        w={{base: '90%', md: '80%'}}
+        mx='auto' 
+        justify='center'
+        direction='column'
+        p={5}
+        h={{base: '100%', md: '180vh'}}
+        py={{base:'100px', md:'120px'}}
+        >
+            <VStack align={'center'} justify='center'>
+                <Heading
+                as='h2'
+                color='#2d3748' 
+                textAlign='center' 
+                fontSize={{
+                base: "2xl",
+                md: "3xl",
+                lg: '4xl'
+                }}
+                letterSpacing=' -0.015em'
+                lineHeight= '1.24'
+                fontWeight='bold'
+                mb={5}
+                >
+                    Nuestos servicios 
+                <Box borderTop='2px' color='rgb(49 151 149)' w='50%' mx='auto' mt={2} />
+                </Heading>
+                <Text
+                opacity='0.7'
+                fontSize={18}
+                p={5}
+                textAlign='center'
+                >
+                    Atención Online y presencial a Niños, Adolescentes y Adultos, Familias y Parejas con orientación Sistémica. 
+                </Text>
+            </VStack>
             <Stack
             spacing={{
-                base: 10,
-                md: 0,
+            base: 10,
+            md: 0,
             }}
             display={{
-                md: "grid",
+             md: "grid",
             }}
             gridTemplateColumns={{
-                md: "repeat(3,1fr)",
+            md: "repeat(3,1fr)",
             }}
             gridColumnGap={{
-                md: 8,
+            md: 8,
             }}
             gridRowGap={{
-                md: 10,
+            md: 10,
             }}
             mt={10}>  
                 {data.map( oneData => {
                     return <Service key={oneData.id} oneData={oneData}/>
                 })}
             </Stack>
-          {/* </Box> */}
         </Flex>
-      </Box>
+    </Box>
   )
 }
 
