@@ -38,6 +38,7 @@ const Header = () => {
     borderBottomWidth={1}
     position='fixed'
     zIndex='1'
+    boxShadow='xl'
     >
       <Flex >
         <HStack
