@@ -4,6 +4,8 @@ import {
     Stack,
     Heading,
     Box,
+    Text,
+    VStack
     } from '@chakra-ui/react';
 import data from '../Servicios/Service/data';
 import Service from './Service/Service';
@@ -14,17 +16,18 @@ const Servicios = () => {
     id='services'
     >
       <Flex 
-      w={{base: '90%', md: '80%', lg:'70%'}}
+      w={{base: '90%', md: '80%'}}
       mx='auto' 
       justify='center'
       direction='column'
       p={5}
-      h={{base: '100%', md: '120vh'}}
+      h={{base: '100%', md: '150vh'}}
       border='1px'
       borderColor='red'
       >
-          <Flex align={'center'} justify='center' my={4}>
-              <Heading 
+          <VStack align={'center'} justify='center' my={4}>
+              <Heading
+              as='h2'
               color='#2d3748' 
               textAlign='center' 
               fontSize={{
@@ -32,15 +35,23 @@ const Servicios = () => {
                       md: "3xl",
                       lg: '4xl'
                       }}
-              letter-spacing=' -0.015em'
-              line-height= '1.24'
-              font-size= '2rem'
+              letterSpacing=' -0.015em'
+              lineHeight= '1.24'
               fontWeight='bold' 
               mt={{base:'100px', md:'0px'}}
+              mb={5}
               >
                   Nuestos servicios 
+                  <Box borderTop='2px' color='rgb(49 151 149)' w='50%' mx='auto' mt={2} />
               </Heading>
-          </Flex>
+              <Text
+              opacity='0.7'
+              fontSize={18}
+              mb={15}
+              >
+                Atención Online y presencial a Niños, Adolescentes y Adultos, Familias y Parejas con orientación Sistémica. 
+              </Text>
+          </VStack>
           {/* <Box
           m={10}
           > */}
@@ -53,7 +64,7 @@ const Servicios = () => {
                 md: "grid",
             }}
             gridTemplateColumns={{
-                md: "repeat(2,1fr)",
+                md: "repeat(3,1fr)",
             }}
             gridColumnGap={{
                 md: 8,

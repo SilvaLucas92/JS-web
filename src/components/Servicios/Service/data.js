@@ -18,5 +18,15 @@ export default [
         id: 4,
         title: 'Parejas',
         description: 'fobia, llanto, problemas de socializacion, fobia, llanto, problemas de socializacion'
+    },
+    {
+        id: 5,
+        title: 'Parejas',
+        description: 'fobia, llanto, problemas de socializacion, fobia, llanto, problemas de socializacion'
+    },
+    {
+        id: 6,
+        title: 'Parejas',
+        description: 'fobia, llanto, problemas de socializacion, fobia, llanto, problemas de socializacion'
     }
 ]

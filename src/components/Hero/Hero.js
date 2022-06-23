@@ -71,20 +71,23 @@ id='hero'
           color="#2b2c34"
           >
             Julio Silva{" "}
+          </chakra.h1>
           <chakra.h2
             display={{
             base: "block",
             }}
             fontSize={{
-            base: "4xl",
-            sm: "xl",
-            md: "6xl",
+            base: "3xl",
+            sm: "4xl",
+            md: "5xl",
           }}
+            letterSpacing="tight"
+            lineHeight="short"
+            fontWeight="extrabold"
             color="#319795"
             >
                 Psicologo Clinico
             </chakra.h2>
-          </chakra.h1>
           <chakra.p
             mt={{
               base: 3,
@@ -112,25 +115,27 @@ id='hero'
           w='full'
           >
             <Button
-            m={2}
+            // m={2}
             p={3}
             w={{base:'100%', sm:'40%', md:'35%', xl:'25%'}}
             rightIcon={<ArrowForwardIcon />}
             colorScheme='teal' 
             variant='outline'
-            mx={{base: 'auto', md: '2', xl:'5' }}
+            mx={{base: 'auto', sm: '5px' }}
+            my={{base: '5px', sm:'2px'}}
             >
               <Link to='about-me'>Conoceme</Link>
             </Button>
             <Button
-            m={2}
+            // m={2}
             bg='rgb(49 151 149)'
             p={3}
             w={{base:'100%', sm:'40%', md:'35%', xl:'25%'}}
             rightIcon={<EmailIcon />}
             colorScheme='teal'
             variant='solid'
-            mx={{base: 'auto', md: '2', xl:'5'}}
+            mx={{base: 'auto', sm:'5px'}}
+            my={{base: '5px', sm:'2px'}}
             >
               <Link to='contact-me'>Contactame</Link>
             </Button>

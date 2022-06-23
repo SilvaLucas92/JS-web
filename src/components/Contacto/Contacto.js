@@ -18,7 +18,7 @@ const Contacto = () => {
     bg='rgb(49 151 149)'
     id='contact-me'>
       <Flex 
-      w={{base: '90%', md: '80%', lg:'70%'}}
+      w={{base: '90%', md: '80%'}}
       mx='auto' 
       justify='center'
       direction='column'
@@ -37,13 +37,13 @@ const Contacto = () => {
                     md: "3xl",
                     lg: '4xl'
                     }}
-          letter-spacing=' -0.015em'
-          line-height= '1.24'
-          font-size= '2rem'
+          letterSpacing=' -0.015em'
+          lineHeight= '1.24'
           fontWeight='bold'
           mt={{base:'100px', md:'5px'}}
           >
-            Contacto 
+            Contacto
+            <Box borderTop='2px' color='#ffffff' w='50%' mx='auto' mt={2} />
           </Heading>
         </Flex>
         <Text 
@@ -60,6 +60,8 @@ const Contacto = () => {
         icon= {<AiOutlineArrowUp  />}
         onClick={scrollToTop}
         backgroundColor='#ffffff'
+        colorScheme='teal' 
+        variant='outline'
         />
       </Center>
     </Box>

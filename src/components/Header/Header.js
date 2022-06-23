@@ -33,6 +33,8 @@ const Header = () => {
     w='100%'
     position="fixed"
     top={show ? 0 : '-100px'}
+    left='0'
+    right='0'
     bg='#ffffff'
     borderBottomWidth={1}
     zIndex= '99'
@@ -71,15 +73,6 @@ const Header = () => {
             justify='center'
             align='center'
           >
-            <Button m={2} variant='link' >
-              <Link
-              to='hero'
-              spy={true} 
-              smooth={true} 
-              offset={100} 
-              duration={800}
-              >Inicio</Link>
-            </Button>
             <Button m={2} variant='link'>
             <Link
               to='about-me'
@@ -123,16 +116,6 @@ const Header = () => {
           border='1px'
     borderColor='red'
           >
-            <Button my={8} variant='link' size='lg'>
-              <Link
-              to='hero'
-              spy={true} 
-              smooth={true} 
-              offset={100} 
-              duration={800}
-              onClick={() => {return setShowMenu(false)}}
-              >Inicio</Link>
-            </Button>
             <Button my={8} variant='link' size='lg'>
             <Link
               to='about-me'
