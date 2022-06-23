@@ -114,7 +114,6 @@ const Hero = () => {
               w='full'
               >
                 <Button
-                // m={2}
                 p={3}
                 w={{base:'100%', sm:'40%', md:'35%', xl:'25%'}}
                 rightIcon={<ArrowForwardIcon />}
@@ -122,11 +121,11 @@ const Hero = () => {
                 variant='outline'
                 mx={{base: 'auto', sm: '5px' }}
                 my={{base: '5px', sm:'2px'}}
+                fontSize={{base:'16px', md:'18px'}}
                 >
                   <Link to='about-me'>Conoceme</Link>
                 </Button>
                 <Button
-                // m={2}
                 bg='rgb(49 151 149)'
                 p={3}
                 w={{base:'100%', sm:'40%', md:'35%', xl:'25%'}}
@@ -135,6 +134,7 @@ const Hero = () => {
                 variant='solid'
                 mx={{base: 'auto', sm:'5px'}}
                 my={{base: '5px', sm:'2px'}}
+                fontSize={{base:'16px', md:'18px'}}
                 >
                   <Link to='contact-me'>Contactame</Link>
                 </Button>

@@ -53,7 +53,7 @@ const Header = () => {
           >
               Julio Silva
           </Heading>
-          <Heading display={{base: 'block', md:'none'}}>
+          <Heading  display={{base: 'block', md:'none'}}>
               JS
           </Heading>
           <Flex
@@ -62,7 +62,11 @@ const Header = () => {
             <IconButton
               icon={!showMenu? <AiOutlineAlignRight /> : <AiOutlineClose />} 
               onClick={() => {return !showMenu? setShowMenu(true) : setShowMenu(false)}}
-              fontSize={25}
+              fontSize={22}
+              isRound='true'
+              backgroundColor='#ffffff'
+              colorScheme='teal' 
+              variant='outline'
             />
           </Flex>
 

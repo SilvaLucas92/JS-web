@@ -27,6 +27,7 @@ const SingleContact = () => {
         fontSize={{base:'20px', md:'25px'}}
         lineHeight= '1.24'
         fontWeight='bold'
+        isRound='true'
         />
         <Text 
         fontSize={{base:'sm', sm: 'md', md:'lg'}} 
@@ -55,6 +56,7 @@ const SingleContact = () => {
           fontSize={{base:'20px', md:'25px'}}
           lineHeight= '1.24'
           fontWeight='bold'
+          isRound='true'
           />
           <Text  
           fontSize={{base:'sm', sm: 'md', md:'lg'}} 
@@ -83,6 +85,7 @@ const SingleContact = () => {
           fontSize={{base:'20px', md:'25px'}}
           lineHeight= '1.24'
           fontWeight='bold'
+          isRound='true'
           />
           <Text 
           fontSize={{base:'sm', sm: 'md', md:'lg'}} 
