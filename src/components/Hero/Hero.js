@@ -16,8 +16,7 @@ const Hero = () => {
       <Flex  
       h={{base: '100vh', md: '120vh'}}
       w={{base: '90%', md: '80%'}}
-      mx='auto'   
-      maxW="7xl"  
+      mx='auto'    
       justify='center'
       align='center'
       >
@@ -35,34 +34,28 @@ const Hero = () => {
         >
         <Box
           maxW={{
-            base: "7xl",
+          base: "7xl",
           }}
           px={{
-            base: 4,
-            sm: 6,
-            lg: 8,
-          }}
-          mt={{
-            base: 12,
-            md: 16,
-            lg: 20,
-            xl: 28,
+          base: 4,
+          sm: 6,
+          lg: 8,
           }}
         >
           <VStack
             textAlign="center"
             w={{
-              base: "full",
-              md: 11 / 12,
-              xl: 8 / 12,
-              }}
-              mx="auto"
+            base: "full",
+            md: 11 / 12,
+            xl: 8 / 12,
+            }}
+            mx="auto"
             >
             <chakra.h1
               fontSize={{
-                base: "5xl",
-                sm: "6xl",
-                md: "8xl",
+              base: "5xl",
+              sm: "6xl",
+              md: "8xl",
               }}
               letterSpacing="tight"
               lineHeight="short"
@@ -79,33 +72,25 @@ const Hero = () => {
                 base: "3xl",
                 sm: "4xl",
                 md: "5xl",
-              }}
+                }}
                 letterSpacing="tight"
                 lineHeight="short"
                 fontWeight="extrabold"
                 color="#319795"
                 >
                     Psicologo Clinico
-                </chakra.h2>
+              </chakra.h2>
               <chakra.p
-                mt={{
-                  base: 3,
-                  sm: 5,
-                  md: 5,
-                }}
-                mx={{
-                  sm: "auto",
-                  lg: 0,
-                }}
-                mb={6}
+                m={{base: 3, sm:5}}
                 fontSize={{
-                  base: "lg",
-                  md: "xl",
+                base: "lg",
+                md: "xl",
                 }}
                 color="gray.500"
                 lineHeight="base"
               >
-                Anim aute id magna aliqua ad ad non deserunt sunt.
+                " De una herida, lo que importa es la cicatriz. "<br></br>
+                Jaques Lacan
               </chakra.p>
               <Flex
               direction={{base:'column', sm:'row'}}
@@ -115,7 +100,7 @@ const Hero = () => {
               >
                 <Button
                 p={3}
-                w={{base:'100%', sm:'40%', md:'35%', xl:'25%'}}
+                w={{base:'100%', sm:'35%', md:'35%', xl:'25%'}}
                 rightIcon={<ArrowForwardIcon />}
                 colorScheme='teal' 
                 variant='outline'
@@ -128,7 +113,7 @@ const Hero = () => {
                 <Button
                 bg='rgb(49 151 149)'
                 p={3}
-                w={{base:'100%', sm:'40%', md:'35%', xl:'25%'}}
+                w={{base:'100%', sm:'35%', md:'35%', xl:'25%'}}
                 rightIcon={<EmailIcon />}
                 colorScheme='teal'
                 variant='solid'
