@@ -22,19 +22,20 @@ const AboutMe = () => {
           id='about-me'
           >
             <Flex 
-            h={{base: '100%'}}
+            // h={{base: '100%'}}
             w={{base: '90%', md: '80%'}}
             mx='auto' 
             p={5}
             direction='column'
             align='center'
             justify='center'
-            py={{base:'100px', md:'140px'}}
+            // py={{base:'100px', md:'140px'}}
             data-aos="fade-up"
             >
               <Box
               h='100%'
               mx='auto'
+              mt='100px'
               >
                 <Image 
                 src= {ya}
@@ -44,6 +45,7 @@ const AboutMe = () => {
               </Box>   
               <Box 
               h='100%'
+              mb='100px'
               >
               <Flex 
               align='center'

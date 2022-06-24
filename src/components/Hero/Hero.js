@@ -14,7 +14,6 @@ const Hero = () => {
     id='hero'
     >
       <Flex  
-      h={{base: '100vh', md: '120vh'}}
       w={{base: '90%', md: '80%'}}
       mx='auto'    
       justify='center'
@@ -22,13 +21,7 @@ const Hero = () => {
       >
         <Box
           pos="relative"
-          pb={{
-            base: 8,
-            sm: 16,
-            md: 20,
-            lg: 28,
-            xl: 32,
-          }}
+          my='100px'
           w="full"
           border="solid 1px transparent"
         >

@@ -26,7 +26,7 @@ const Contacto = () => {
       justify='center'
       direction='column'
       p={5}
-      h={{base: '100%', md: '120vh'}}
+      // h={{base: '100%', md: '120vh'}}
       data-aos="fade-up"
       py={{base:'100px', md:'120px'}}
       >
