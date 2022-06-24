@@ -1,3 +1,4 @@
+import About from './components/AboutMe/About';
 import AboutMe from './components/AboutMe/AboutMe';
 import Contacto from './components/Contacto/Contacto';
 import Footer from './components/Footer/Footer';
@@ -9,7 +10,8 @@ function App() {
     <>
       <Header />,
       <Hero />
-      <AboutMe />
+      <About />
+      {/* <AboutMe /> */}
       <Servicios />
       <Contacto />
       <Footer />
