@@ -39,7 +39,7 @@ const Service = () => {
                 Fobias
             </Heading>
             <Text
-            fontSize={[18, 20, , 22]}
+            fontSize={{base:'18px', md:'20px'}}            
             opacity= '0.7'
             >
                 Customize any part of our components to match your design needs.

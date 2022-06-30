@@ -19,7 +19,6 @@ const Hero = () => {
       justify='center'
       align='center'
       py={{base:'180px',sm: '200px', md:'220px', xl:'240px'}}
-      border='1px red solid'
       >
         <Box
           pos="relative"
@@ -91,7 +90,7 @@ const Hero = () => {
               >
                 <Button
                 p={3}
-                w={{base:'100%', sm:'35%', md:'35%', xl:'25%'}}
+                w={{base:'200px', sm:'150px', md:'190px', xl:'210px'}}
                 rightIcon={<ArrowForwardIcon />}
                 colorScheme='teal' 
                 variant='outline'
@@ -104,7 +103,7 @@ const Hero = () => {
                 <Button
                 bg='rgb(49 151 149)'
                 p={3}
-                w={{base:'100%', sm:'35%', md:'35%', xl:'25%'}}
+                w={{base:'200px', sm:'150px', md:'190px', xl:'210px'}}
                 rightIcon={<EmailIcon />}
                 colorScheme='teal'
                 variant='solid'

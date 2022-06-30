@@ -19,14 +19,11 @@ const OneQuestion = ({oneData}) => {
             as='h3'
             color='#2d3748'
             fontWeight= 'semibold'
-            // mt={8}
-            // mb={4}
-            fontSize={[20, 22, , 24]}
-            opacity= '0.9'
+            fontSize={{base:'20px', md:'22'}} 
             > { question } </Heading>
             <IconButton 
             icon={!visibleTrue? <AiOutlinePlus /> : <AiOutlineMinus />}
-            fontSize={[20, 22, , 22]}
+            fontSize={{base:'20px', md:'22px'}}
             isRound='true'
             backgroundColor='#ffffff'
             colorScheme='teal' 
@@ -42,8 +39,8 @@ const OneQuestion = ({oneData}) => {
         display= { visibleTrue? 'block' : 'none' }
         >
             <Text
-            fontSize={[18, 20, , 22]}
-            color='#767d88'
+            fontSize={{base:'18px', md:'20px'}}            
+            opacity= '0.7'
             pb='10px' 
             >{ answer }</Text>
         </Flex>

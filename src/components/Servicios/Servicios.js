@@ -22,7 +22,6 @@ const Servicios = () => {
         justify='center'
         direction='column'
         py={{base:'140px',sm: '160px', md:'180px', xl:'200px'}}
-        border='1px red solid'
         >
             <VStack align={'center'} justify='center'>
                 <Heading
@@ -44,7 +43,7 @@ const Servicios = () => {
                 </Heading>
                 <Text
                 opacity='0.7'
-                fontSize={18}
+                fontSize={{base:'18px', md:'20px'}}   
                 p={5}
                 textAlign='center'
                 >

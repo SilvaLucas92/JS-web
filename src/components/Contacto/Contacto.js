@@ -27,7 +27,6 @@ const Contacto = () => {
       direction='column'
       data-aos="fade-up"
       py={{base:'140px',sm: '160px', md:'180px', xl:'200px'}}
-      border='1px red solid'
       >
         <Flex 
         align='center' 
@@ -55,7 +54,7 @@ const Contacto = () => {
         textAlign='center' 
         color='#ffffff' 
         p={5}
-        fontSize={18} 
+        fontSize={{base:'18px', md:'20px'}}   
         opacity='0.8'
         >
           Si tenes alguna duda y queres escribirnos, te dejamo tos los medio para que  te comuniques

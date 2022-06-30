@@ -30,13 +30,13 @@ const AboutMe = () => {
             align= 'flex-start'
             justify= 'center'
             direction={{base:'column', xl:'row'}}
-            border='1px red solid'
             px={{base:'10px', xl:'20px'}}
             >
               <Image 
               src= {ya}
               w={{base:'350px', sm:'500px', md:'550px'}}
               mx='auto'
+              borderRadius='10px'
               />      
               <Box 
               h='100%'
@@ -65,9 +65,9 @@ const AboutMe = () => {
                 </Heading>
               </Flex>
               <Text
-              p={5}
+              p={10}
               opacity='0.7'
-              fontSize={[18, 20, , 22]}
+              fontSize={{base:'18px', md:'20px'}}  
               textAlign='center' 
               >
                 { text }
