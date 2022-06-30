@@ -21,7 +21,7 @@ const HeroPr = () => {
     initial={{opacity:0}}
     animate={{opacity:1}}
     transition={{delay:1}}
-    border='solid 1px red'
+    w='100%'
     >
       <Flex  
       w={{base: '90%', md: '80%'}}
