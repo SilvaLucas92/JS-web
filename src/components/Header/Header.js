@@ -48,13 +48,13 @@ const Header = () => {
           align='center'
           p={5}>
           <Heading 
-          display={{base: 'none', md: 'block'}}
+          display={{base: 'none', xl: 'block'}}
           fontWeight="bold"
           color="#2b2c34"
           >
               Julio Silva
           </Heading>
-          <Heading  display={{base: 'block', md:'none'}}>
+          <Heading  display={{base: 'block', xl:'none'}}>
               JS
           </Heading>
           <Flex

@@ -11,8 +11,8 @@ function App() {
     <>
       <Header />,
       <Hero />
-      <About />
-      {/* <AboutMe /> */}
+      {/* <About /> */}
+      <AboutMe />
       <Servicios />
       <FrequentQuestions />
       <Contacto />

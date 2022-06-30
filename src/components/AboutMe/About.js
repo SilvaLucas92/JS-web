@@ -40,7 +40,7 @@ const About = () => {
         w={{base:'90%', sm:'80%' ,md:'70%', xl:'55%'}}
         minH={{ md:'500px'}}
         borderRadius= '8px'
-                />       
+        />       
             <Box
             w={{base:'80%',sm:'70%' ,md:'50%'}}
             p={{base:'15px', xl:'20px'}}

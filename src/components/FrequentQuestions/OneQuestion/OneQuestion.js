@@ -21,6 +21,7 @@ const OneQuestion = ({oneData}) => {
             mt={8}
             mb={4}
             fontSize={[18, 20, 22 , 24]}
+            opacity= '0.9'
             > { question } </Heading>
             <IconButton 
             icon={<AiOutlinePlus />}
@@ -39,7 +40,7 @@ const OneQuestion = ({oneData}) => {
         p='5px'
         display= { visibleTrue? 'block' : 'none' }
         fontSize={[18, 20, 22 , 24]}
-        opacity= '0.7'
+        opacity= '0.8'
         >
             <Text
             fontSize={{base:'sm', sm: 'md', md:'lg'}} 

@@ -1,19 +1,22 @@
-import React, { useEffect } from 'react'
+import React, { useState } from 'react'
 import {   
-    Flex,
-    Heading,
-    Text,
-    Box,
-    Image
-    } from '@chakra-ui/react';
+  Flex,
+  Heading,
+  Text,
+  Box,
+  Image,
+  Center,
+  HStack,
+  IconButton
+  } from '@chakra-ui/react';
 import ya from './1.jpg'
 import Aos from 'aos';
 import 'aos/dist/aos.css'
+import data from '../AboutMe/data';
+import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai';
 const AboutMe = () => {
-
-  useEffect(() => {
-    Aos.init({ duration:2000 })
-  }, [])
+  const [ index, setIndex ] = useState(0);
+  const { title, text } = data[index];
   
   return (
           <Box
@@ -22,35 +25,27 @@ const AboutMe = () => {
           id='about-me'
           >
             <Flex 
-            // h={{base: '100%'}}
             w={{base: '90%', md: '80%'}}
-            mx='auto' 
-            p={5}
-            direction='column'
-            align='center'
-            justify='center'
-            // py={{base:'180px', md:'140px'}}
-            py={{base:'100px', md:'120px', xl:'150px'}}
-            data-aos="fade-up"
+            mx='auto'
+            py={{base:'140px',sm: '160px', md:'180px', xl:'200px'}}
+            align= 'flex-start'
+            justify= 'center'
+            direction={{base:'column', xl:'row'}}
             border='1px red solid'
+            px={{base:'10px', xl:'20px'}}
             >
-              <Box
-              h='100%'
+              <Image 
+              src= {ya}
+              w={{base:'350px', sm:'500px', md:'550px'}}
               mx='auto'
-              >
-                <Image 
-                src= {ya}
-                boxSize={{base: '350px', md: '400px'}}
-                borderRadius='50%'
-                />
-              </Box>   
+              />      
               <Box 
               h='100%'
-              mb='100px'
               >
               <Flex 
               align='center'
               justify='center' 
+              w={{base:'100%', xl:'100%'}}
               >
                 <Heading 
                 as='h2'
@@ -64,9 +59,9 @@ const AboutMe = () => {
                 lg: '4xl'
                 }}
                 fontWeight='bold'
-                mt={15}
+                mt={{base:15, xl:'0'}}
                 >
-                   Conoceme 
+                   { title }  
                 <Box borderTop='2px' color='rgb(49 151 149)' w='50%' mx='auto' mt={2} />
                 </Heading>
               </Flex>
@@ -76,10 +71,26 @@ const AboutMe = () => {
               fontSize={18}
               textAlign='center' 
               >
-                Psicologo egresado de la UBA - especializacion en psicoterapia sistemica. Movilizado por deseo de acompañar a las personas a lograr una mejor calidad de vida, atiendo en centros de salud integrales y en mi consultorio privado. me gusta leer, escribir y el cine. Convencido de que siempre en el problema se encuentra la solucion.
-                Psicólogo egresado en la Universidad de Buenos Aires (UBA) – Especialización en Psicoterapia Sistémica. 
-                Trabajo en APS (Atención Primaria de Salud) en Centros de Salud Integral, formando parte de equipos interdisciplinarios con Médicos familiares, Pediatras, Cardiólogos, Enfermeras, Ginecólogas, Obstetras, Trabajadoras Sociales y Psiquiatras. 
+                { text }
               </Text>
+              <HStack pt={5} justify='center'>
+                <IconButton 
+                isRound='true' 
+                onClick={() => index === 0? setIndex(data.length - 1) : setIndex(index - 1)} 
+                icon={<AiOutlineArrowLeft />} 
+                backgroundColor='#ffffff'
+                colorScheme='teal' 
+                variant='outline'
+                />
+                <IconButton 
+                isRound='true' 
+                onClick={() => index === (data.length - 1)  ? setIndex(0) : setIndex(index + 1)} 
+                icon={<AiOutlineArrowRight />} 
+                backgroundColor='#ffffff'
+                colorScheme='teal' 
+                variant='outline'  
+                />
+                </HStack>  
               </Box>
             </Flex>
           </Box>

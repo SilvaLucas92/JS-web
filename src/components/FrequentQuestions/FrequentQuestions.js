@@ -38,7 +38,7 @@ const FrequentQuestions = () => {
                 backgroundColor='#ffffff'
                 boxShadow='lg'
                 borderRadius={5}
-                p={5}
+                px={5}
                 my={5}
                 mx='auto'
                 >

@@ -18,7 +18,7 @@ const Hero = () => {
       mx='auto'    
       justify='center'
       align='center'
-      py={{base:'140px',sm: '160px', md:'180px', xl:'200px'}}
+      py={{base:'180px',sm: '200px', md:'220px', xl:'240px'}}
       border='1px red solid'
       >
         <Box
