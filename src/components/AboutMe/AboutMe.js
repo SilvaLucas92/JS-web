@@ -5,16 +5,15 @@ import {
   Text,
   Box,
   Image,
-  Center,
   HStack,
   IconButton
   } from '@chakra-ui/react';
 import ya from './1.jpg'
-import Aos from 'aos';
 import 'aos/dist/aos.css'
 import data from '../AboutMe/data';
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai';
 const AboutMe = () => {
+  
   const [ index, setIndex ] = useState(0);
   const { title, text } = data[index];
   
@@ -68,7 +67,7 @@ const AboutMe = () => {
               <Text
               p={5}
               opacity='0.7'
-              fontSize={18}
+              fontSize={[18, 20, , 22]}
               textAlign='center' 
               >
                 { text }

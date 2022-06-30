@@ -34,12 +34,12 @@ const Service = () => {
             fontWeight= 'semibold'
             mt={8}
             mb={4}
-            fontSize={20}
+            fontSize={[20, 22, , 24]}
             >
                 Fobias
             </Heading>
             <Text
-            fontSize={18}
+            fontSize={[18, 20, , 22]}
             opacity= '0.7'
             >
                 Customize any part of our components to match your design needs.
