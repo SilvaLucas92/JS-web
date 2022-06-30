@@ -18,17 +18,15 @@ const Hero = () => {
       mx='auto'    
       justify='center'
       align='center'
+      py={{base:'140px',sm: '160px', md:'180px', xl:'200px'}}
+      border='1px red solid'
       >
         <Box
           pos="relative"
-          my='100px'
           w="full"
           border="solid 1px transparent"
         >
         <Box
-          maxW={{
-          base: "7xl",
-          }}
           px={{
           base: 4,
           sm: 6,

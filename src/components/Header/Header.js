@@ -99,6 +99,16 @@ const Header = () => {
             </Button>
             <Button m={2} variant='link'>
             <Link
+              to='frequentQuestions'
+              spy={true} 
+              smooth={true} 
+              offset={100} 
+              duration={800}
+            >
+            Preguntas Frecuentes</Link>
+            </Button>
+            <Button m={2} variant='link'>
+            <Link
               to='contact-me'
               spy={true} 
               smooth={true} 
@@ -140,6 +150,17 @@ const Header = () => {
               onClick={() => {return setShowMenu(false)}}
             >
             Nuestros servicios</Link>
+            </Button>
+            <Button my={8} variant='link' size='lg'>
+            <Link
+              to='frequentQuestions'
+              spy={true} 
+              smooth={true} 
+              offset={100} 
+              duration={800}
+              onClick={() => {return setShowMenu(false)}}
+            >
+            Preguntas frecuentes</Link>
             </Button>
             <Button my={8} variant='link' size='lg'>
             <Link

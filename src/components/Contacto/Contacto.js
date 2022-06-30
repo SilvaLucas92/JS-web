@@ -25,10 +25,9 @@ const Contacto = () => {
       mx='auto' 
       justify='center'
       direction='column'
-      p={5}
-      // h={{base: '100%', md: '120vh'}}
       data-aos="fade-up"
-      py={{base:'100px', md:'120px'}}
+      py={{base:'140px',sm: '160px', md:'180px', xl:'200px'}}
+      border='1px red solid'
       >
         <Flex 
         align='center' 

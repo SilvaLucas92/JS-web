@@ -1,6 +1,6 @@
 import React from 'react';
 import { BsWhatsapp } from 'react-icons/bs';
-import { AiOutlineMail, AiOutlineLinkedin } from 'react-icons/ai'
+import { AiOutlineMail } from 'react-icons/ai'
 import { GoLocation } from 'react-icons/go'
 import { IconButton, Text, HStack } from '@chakra-ui/react'     
 const SingleContact = () => {

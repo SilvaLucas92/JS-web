@@ -27,18 +27,18 @@ const About = () => {
     >
         <Flex 
         w={{base: '90%', md: '80%'}}
-        maxW= '1000px'
         mx='auto'
-        my='100px'
+        py={{base:'140px',sm: '160px', md:'180px', xl:'200px'}}
         align= 'center'
         justify= 'center'
         direction={{base:'column', md:'row'}}
+        border='1px red solid'
         //   data-aos="fade-up"
         >
         <Image 
         src= {ya}
-        w={{base:'90%', sm:'80%' ,md:'60%', xl:'55%'}}
-        minH={{base:'400px', md:'600px'}}
+        w={{base:'90%', sm:'80%' ,md:'70%', xl:'55%'}}
+        minH={{ md:'500px'}}
         borderRadius= '8px'
                 />       
             <Box

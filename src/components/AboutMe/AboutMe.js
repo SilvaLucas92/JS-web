@@ -29,13 +29,14 @@ const AboutMe = () => {
             direction='column'
             align='center'
             justify='center'
-            // py={{base:'100px', md:'140px'}}
+            // py={{base:'180px', md:'140px'}}
+            py={{base:'100px', md:'120px', xl:'150px'}}
             data-aos="fade-up"
+            border='1px red solid'
             >
               <Box
               h='100%'
               mx='auto'
-              mt='100px'
               >
                 <Image 
                 src= {ya}
