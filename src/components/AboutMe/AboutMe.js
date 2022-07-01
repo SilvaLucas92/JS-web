@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import {   
   Flex,
   Heading,
@@ -9,13 +9,17 @@ import {
   IconButton
   } from '@chakra-ui/react';
 import ya from './1.jpg'
-import 'aos/dist/aos.css'
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 import data from '../AboutMe/data';
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai';
 const AboutMe = () => {
   
   const [ index, setIndex ] = useState(0);
   const { title, text } = data[index];
+  useEffect(() => {
+    Aos.init({ duration:2000 })
+  }, []);
   
   return (
           <Box
@@ -31,6 +35,7 @@ const AboutMe = () => {
             justify= 'center'
             direction={{base:'column', xl:'row'}}
             px={{base:'10px', xl:'20px'}}
+            data-aos="fade-up"
             >
               <Image 
               src= {ya}

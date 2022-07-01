@@ -46,7 +46,11 @@ const Head = () => {
     boxShadow='xl'
     initial={{y:-250}}
     animate={{y:0}}
-    transition={{delay:0.5, type: "tween"}}
+    transition={{
+      delay:0.5, 
+    type: "tween", 
+    duration:0.5,
+    ease:'easeInOut'}}
     >
       <Flex >
         <HStack

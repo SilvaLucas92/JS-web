@@ -1,9 +1,15 @@
 import { Box, VStack, Heading } from '@chakra-ui/react'
-import React from 'react'
+import React, { useEffect } from 'react'
 import data from './data'
 import OneQuestion from './OneQuestion/OneQuestion'
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const FrequentQuestions = () => {
+    
+    useEffect(() => {
+        Aos.init({ duration:2000 })
+      }, []);
 
   return (
     <Box
@@ -15,7 +21,7 @@ const FrequentQuestions = () => {
         w={{base: '90%', md: '80%'}}
         mx='auto' 
         py={{base:'140px',sm: '160px', md:'180px', xl:'200px'}}
-
+        data-aos="fade-up"
         >
             <Heading
             as='h2'

@@ -1,4 +1,4 @@
-import { Heading, Flex, IconButton, Text } from '@chakra-ui/react';
+import { Heading, Flex, IconButton, Text, chakra } from '@chakra-ui/react';
 import React, { useState } from 'react'
 import { AiOutlinePlus, AiOutlineMinus } from 'react-icons/ai'
 
