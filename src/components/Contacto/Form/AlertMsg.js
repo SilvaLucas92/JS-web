@@ -12,7 +12,7 @@ const AlertMsg = ({ setAlertOpen, alertOpen }) => {
   return (
     <Alert status="success">
       <AlertIcon />
-      Data uploaded to the server. Fire on!
+      Mensaje Enviado! Responderemos a la brevedad.
     </Alert>
   );
 };

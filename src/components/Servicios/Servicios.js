@@ -7,7 +7,7 @@ const Servicios = () => {
   return (
     <Box as="section" id="services">
       <Flex
-        w={{ base: "90%", md: "80%" }}
+        w={{ base: "90%", md: "70%" }}
         mx="auto"
         justify="center"
         direction="column"

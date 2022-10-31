@@ -67,16 +67,18 @@ const HeroPr = () => {
                 justify="center"
                 w="full"
               >
-                <Button
-                  w={{ base: "150px", sm: "150px", md: "190px", xl: "210px" }}
-                  rightIcon={<EmailIcon />}
-                  colorScheme="teal"
-                  variant="solid"
-                  mx={"auto"}
-                  fontSize={{ base: "16px", md: "18px" }}
-                >
-                  <Link to="contact-me">Contactame</Link>
-                </Button>
+                <Link to="contact-me">
+                  <Button
+                    w={{ base: "150px", sm: "150px", md: "190px", xl: "210px" }}
+                    rightIcon={<EmailIcon />}
+                    colorScheme="teal"
+                    variant="solid"
+                    mx={"auto"}
+                    fontSize={{ base: "16px", md: "18px" }}
+                  >
+                    Contactame
+                  </Button>
+                </Link>
               </Flex>
             </VStack>
           </Box>
