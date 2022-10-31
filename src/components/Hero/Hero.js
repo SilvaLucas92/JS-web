@@ -1,125 +1,89 @@
-import React from 'react'
-import {
-    Box,
-    chakra,
-    Flex,
-    VStack,
-    Button } from '@chakra-ui/react';
-import { ArrowForwardIcon, EmailIcon } from '@chakra-ui/icons';
-import { Link } from 'react-scroll';
-const Hero = () => {
+import React from "react";
+import { Box, chakra, Flex, VStack, Button } from "@chakra-ui/react";
+import { EmailIcon } from "@chakra-ui/icons";
+import { Link } from "react-scroll";
+const HeroPr = () => {
   return (
-    <Box  
-    bg='#fffffe'
-    id='hero'
-    >
-      <Flex  
-      w={{base: '90%', md: '80%'}}
-      mx='auto'    
-      justify='center'
-      align='center'
-      py={{base:'180px',sm: '200px', md:'220px', xl:'240px'}}
+    <Box bg="#fffffe" id="hero" w="100%">
+      <Flex
+        w={{ base: "90%", md: "70%" }}
+        mx="auto"
+        justify="center"
+        align="center"
+        h="100vh"
       >
-        <Box
-          pos="relative"
-          w="full"
-          border="solid 1px transparent"
-        >
-        <Box
-          px={{
-          base: 4,
-          sm: 6,
-          lg: 8,
-          }}
-        >
-          <VStack
-            textAlign="center"
-            w={{
-            base: "full",
-            md: 11 / 12,
-            xl: 8 / 12,
+        <Box w="full">
+          <Box
+            px={{
+              base: 4,
+              sm: 6,
+              lg: 8,
             }}
-            mx="auto"
-            >
-            <chakra.h1
-              fontSize={{
-              base: "5xl",
-              sm: "6xl",
-              md: "8xl",
+          >
+            <VStack
+              textAlign="center"
+              w={{
+                base: "full",
+                md: 11 / 12,
+                xl: 8 / 12,
               }}
-              letterSpacing="tight"
-              lineHeight="short"
-              fontWeight="extrabold"
-              color="#2b2c34"
+              mx="auto"
+            >
+              <chakra.h1
+                fontSize={{
+                  base: "5xl",
+                  sm: "6xl",
+                  md: "7xl",
+                  lg: "8xl",
+                }}
+                fontWeight="extrabold"
+                color="#2b2c34"
               >
-                Julio Silva{" "}
+                Julio Silva
               </chakra.h1>
               <chakra.h2
-                display={{
-                base: "block",
-                }}
                 fontSize={{
-                base: "3xl",
-                sm: "4xl",
-                md: "5xl",
+                  base: "3xl",
+                  sm: "4xl",
+                  md: "5xl",
                 }}
-                letterSpacing="tight"
-                lineHeight="short"
                 fontWeight="extrabold"
                 color="#319795"
-                >
-                    Psicologo Clinico
+              >
+                Psicologo Clinico
               </chakra.h2>
               <chakra.p
-                m={{base: 3, sm:5}}
                 fontSize={{
-                base: "lg",
-                md: "xl",
+                  base: "lg",
+                  md: "xl",
                 }}
                 color="gray.500"
-                lineHeight="base"
               >
                 " De una herida, lo que importa es la cicatriz. "<br></br>
                 Jaques Lacan
               </chakra.p>
               <Flex
-              direction={{base:'column', sm:'row'}}
-              mt={3}
-              justify='center'
-              w='full'
+                direction={{ base: "column", sm: "row" }}
+                justify="center"
+                w="full"
               >
                 <Button
-                p={3}
-                w={{base:'200px', sm:'150px', md:'190px', xl:'210px'}}
-                rightIcon={<ArrowForwardIcon />}
-                colorScheme='teal' 
-                variant='outline'
-                mx={{base: 'auto', sm: '5px' }}
-                my={{base: '5px', sm:'2px'}}
-                fontSize={{base:'16px', md:'18px'}}
+                  w={{ base: "150px", sm: "150px", md: "190px", xl: "210px" }}
+                  rightIcon={<EmailIcon />}
+                  colorScheme="teal"
+                  variant="solid"
+                  mx={"auto"}
+                  fontSize={{ base: "16px", md: "18px" }}
                 >
-                  <Link to='about-me'>Conoceme</Link>
+                  <Link to="contact-me">Contactame</Link>
                 </Button>
-                <Button
-                bg='rgb(49 151 149)'
-                p={3}
-                w={{base:'200px', sm:'150px', md:'190px', xl:'210px'}}
-                rightIcon={<EmailIcon />}
-                colorScheme='teal'
-                variant='solid'
-                mx={{base: 'auto', sm:'5px'}}
-                my={{base: '5px', sm:'2px'}}
-                fontSize={{base:'16px', md:'18px'}}
-                >
-                  <Link to='contact-me'>Contactame</Link>
-                </Button>
-              </Flex>          
+              </Flex>
             </VStack>
           </Box>
         </Box>
       </Flex>
     </Box>
-  )
-}
+  );
+};
 
-export default Hero;
+export default HeroPr;
