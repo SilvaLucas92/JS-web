@@ -16,7 +16,7 @@ const Contacto = () => {
   }, []);
 
   return (
-    <Box as="section" id="contact-me"  bg="#f7fafc">
+    <Box as="section" id="contact-me">
       <Flex
         w={{ base: "90%", md: "70%" }}
         mx="auto"

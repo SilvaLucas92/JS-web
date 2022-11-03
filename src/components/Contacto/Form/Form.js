@@ -1,91 +1,95 @@
-import { FormControl, Textarea, FormLabel, Input, Button, FormErrorMessage } from "@chakra-ui/react";
-import React, { useState, useEffect } from "react";
-import AlertMsg from './AlertMsg'
+import {
+  FormControl,
+  Textarea,
+  FormLabel,
+  Input,
+  Button
+} from "@chakra-ui/react";
+import { Formik } from "formik";
+import AlertMsg from "./AlertMsg";
+import * as Yup from "yup";
+
 const Form = () => {
-  const [formState, setFormState] = useState({
+  const validationSchema = Yup.object().shape({
+    name: Yup.string().required("Name is required"),
+    email: Yup.string().email("Invalid email").required("Email is required"),
+    text: Yup.string().required("Text is required"),
+  });
+  const initialValue = {
     name: "",
     email: "",
-    text: ""
-  });
-  const [errors, setErrors] = useState({})
-    const [alertOpen, setAlertOpen] = useState(false)
-  const handleChange = (e) => {
-    setFormState((prevState) => ({
-      ...prevState,
-      [e.target.name]: e.target.value,
-    }));
+    text: "",
   };
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if(!formState.name) setErrors((prev) => ({...prev, name: 'Campo requerido'}));
-    if(!formState.email) setErrors((prev) => ({...prev, email: 'Campo requerido'}));
-    if(!formState.text) setErrors((prev) => ({...prev, text: 'Campo requerido'}));
-    if(formState.name && formState.email && formState.text) {
-            setAlertOpen(true)
-            setFormState({
-                name: "",
-                email: "",
-                text: ""
-            })
-    }
+
+  const onSubmit = (values) => {
+    console.log(values);
   };
-  useEffect(() => {
-    setErrors({})
-  }, [formState.name, formState.email, formState.text])
   return (
+    <Formik
+      onSubmit={onSubmit}
+      initialValues={initialValue}
+      validationSchema={validationSchema}
+    >
+      {({ values, handleChange, handleSubmit, errors }) => (
         <form onSubmit={handleSubmit}>
-        <FormControl isInvalid={Boolean(errors.name)}>
-            <FormLabel  htmlFor="name" opacity="0.8">
-            Nombre y apellido
+          <FormControl>
+            <FormLabel htmlFor="name" opacity="0.8">
+              Nombre y apellido
             </FormLabel>
             <Input
-            onChange={handleChange}
-            size={{ base: "md", md: "lg" }}
-            name="name"
-            colorScheme="teal"
-            variant="outline"
-            value={formState.name}
+              size={{ base: "md", md: "lg" }}
+              name="name"
+              colorScheme="teal"
+              variant="outline"
+              value={values.name}
+              onChange={handleChange}
+              
             />
-            {errors.name && <FormErrorMessage>{errors.name}</FormErrorMessage>}
-        </FormControl>
-        <FormControl isInvalid={Boolean(errors.email)}>
-            <FormLabel htmlFor="email"  opacity="0.8">
-            Email
+            {errors.name && <div>{errors.name}</div>}
+          </FormControl>
+          <FormControl>
+            <FormLabel htmlFor="email" opacity="0.8">
+              Email
             </FormLabel>
             <Input
-            onChange={handleChange}
-            name="email"
-            size={{ base: "md", md: "lg" }}
-            colorScheme="teal"
-            variant="outline"
-            value={formState.email}
+              name="email"
+              size={{ base: "md", md: "lg" }}
+              colorScheme="teal"
+              variant="outline"
+              onChange={handleChange}
+              value={values.email}
+              
             />
-            {errors.email && <FormErrorMessage>{errors.email}</FormErrorMessage>}
-        </FormControl>
-        <FormControl isInvalid={Boolean(errors.text)}>
-            <FormLabel  htmlFor="text" opacity="0.8">
-            Ingrese su consulta
+            {errors.email && <div>{errors.email}</div>}
+          </FormControl>
+          <FormControl>
+            <FormLabel htmlFor="text" opacity="0.8">
+              Ingrese su consulta
             </FormLabel>
             <Textarea
-            onChange={handleChange}
-            name="text"
-            size={{ base: "md", md: "lg" }}
-            colorScheme="teal"
-            variant="outline"
-            value={formState.text}
+              onChange={handleChange}
+              name="text"
+              size={{ base: "md", md: "lg" }}
+              colorScheme="teal"
+              variant="outline"
+              
+              value={values.text}
             />
-                    {errors.text && <FormErrorMessage>{errors.text}</FormErrorMessage>}
-        </FormControl>
-        <Button     
-            size='lg'    
+            {errors.text && <div>{errors.text}</div>}
+          </FormControl>
+          <Button
+            size="lg"
             colorScheme="teal"
             variant="outline"
             type="submit"
-            my={5}>
+            my={5}
+          >
             Enviar
-        </Button>
-        {alertOpen && <AlertMsg alertOpen={alertOpen} setAlertOpen={setAlertOpen} />}
+          </Button>
+          {/* {alertOpen && <AlertMsg alertOpen={alertOpen} setAlertOpen={setAlertOpen} />} */}
         </form>
+      )}
+    </Formik>
   );
 };
 
