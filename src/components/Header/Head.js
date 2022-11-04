@@ -40,7 +40,7 @@ const Head = () => {
             fontWeight="bold"
             color="#2b2c34"
           >
-            Julio Silva
+            Julio S. Silva
           </Heading>
           <Heading display={{ base: "block", lg: "none" }}>JS</Heading>
           <Flex display={{ lg: "none" }}>
@@ -54,7 +54,6 @@ const Head = () => {
               variant="outline"
             />
           </Flex>
-
           <Flex
             display={{ base: "none", lg: "flex" }}
             justify="center"

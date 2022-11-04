@@ -4,7 +4,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { TriangleDownIcon } from "@chakra-ui/icons";
 
-const Service = () => {
+const Service = ({oneData}) => {
     useEffect(() => {
         Aos.init({ duration: 2000 });
     }, []);
@@ -28,10 +28,10 @@ const Service = () => {
             my={4}
             fontSize={[20, 22, 24]}
         >
-            Fobias
+            {oneData.title}
         </Heading>
         <Text fontSize={{ base: "18px", md: "20px" }} opacity="0.7">
-            Customize any part of our components to match your design needs.
+            {oneData.description}
         </Text>
         </Box>
     );

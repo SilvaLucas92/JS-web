@@ -31,15 +31,15 @@ const HeroPr = () => {
             >
               <chakra.h1
                 fontSize={{
-                  base: "5xl",
-                  sm: "6xl",
-                  md: "7xl",
-                  lg: "8xl",
+                  base: "4xl",
+                  sm: "5xl",
+                  md: "6xl",
+                  lg: "7xl",
                 }}
                 fontWeight="extrabold"
                 color="#2b2c34"
               >
-                Julio Silva
+                Julio Sebastían Silva
               </chakra.h1>
               <chakra.h2
                 fontSize={{
@@ -50,35 +50,13 @@ const HeroPr = () => {
                 fontWeight="extrabold"
                 color="#319795"
               >
-                Psicologo Clinico
+                Psicólogo Clínico
               </chakra.h2>
-              <chakra.p
-                fontSize={{
-                  base: "lg",
-                  md: "xl",
-                }}
-                color="gray.500"
-              >
-                " De una herida, lo que importa es la cicatriz. "<br></br>
-                Jaques Lacan
-              </chakra.p>
               <Flex
                 direction={{ base: "column", sm: "row" }}
                 justify="center"
                 w="full"
               >
-                <Link to="contact-me">
-                  <Button
-                    w={{ base: "150px", sm: "150px", md: "190px", xl: "210px" }}
-                    rightIcon={<EmailIcon />}
-                    colorScheme="teal"
-                    variant="solid"
-                    mx={"auto"}
-                    fontSize={{ base: "16px", md: "18px" }}
-                  >
-                    Contactame
-                  </Button>
-                </Link>
               </Flex>
             </VStack>
           </Box>

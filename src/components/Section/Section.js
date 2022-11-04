@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { Container, Box, Heading } from "@chakra-ui/react";
+import { Box, Heading } from "@chakra-ui/react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 const Section = ({ title, id, backgroundColor, children }) => {
@@ -9,7 +9,7 @@ const Section = ({ title, id, backgroundColor, children }) => {
   console.log(title);
   return (
     <Box id={id} bg={backgroundColor? backgroundColor : 'white'} as="section" w="full">
-      <Container
+      <Box
         w={{ base: "90%", md: "70%" }}
         mx="auto"
         py={{ base: "140px", sm: "160px", md: "180px", xl: "200px" }}
@@ -26,7 +26,7 @@ const Section = ({ title, id, backgroundColor, children }) => {
           />
         </Heading>
         {children}
-      </Container>
+      </Box>
     </Box>
   );
 };

@@ -5,9 +5,9 @@ const AlertMsg = ({ setAlertOpen, alertOpen }) => {
     if (alertOpen) {
       setTimeout(() => {
         setAlertOpen(false);
-      }, 2000);
+      }, 5000);
     }
-  }, []);
+  }, [setAlertOpen, alertOpen]);
 
   return (
     <Alert status="success">

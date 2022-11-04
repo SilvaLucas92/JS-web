@@ -7,14 +7,9 @@ const Layout = ({ children }) => {
   return (
     <>
       <VStack role="main" spacing={0}>
-
-        {/* Navbar */}
         <Head />
-
-        {/* Main Content */}
         <Flex flexDir="column" width="full">
           {children}
-          {/* Footer */}
           <Footer />
         </Flex>
       </VStack>

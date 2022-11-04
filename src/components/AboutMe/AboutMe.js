@@ -1,59 +1,36 @@
-import { Text, Image } from "@chakra-ui/react";
-import ja from "./ja.jpg";
-import Aos from "aos";
-import { aboutMe } from "./utils";
+import { Text, Image, Center } from "@chakra-ui/react";
 import Section from "../Section/Section";
 const AboutMe = () => {
   return (
     <Section
-      title={aboutMe.title ?? null}
-      id={"about-me"}
+      title='Sobre mí'
+      id="about-me"
       backgroundColor="#f7fafc"
     >
-      <Text p={2} opacity="0.7" fontSize={{ base: "18px", md: "20px" }}>
-        {aboutMe && aboutMe.text}
+      <Center>
+        <Image
+          borderRadius="full"
+          boxSize={{base:"150px", md:'200px'}}
+          src="https://bit.ly/dan-abramov"
+          alt="Dan Abramov"
+          align="center"
+        />
+      </Center>
+      <Text
+        p={2}
+        opacity="0.7"
+        fontSize={{ base: "18px", md: "20px" }}
+        textAlign="center"
+      >
+        Movilizado por deseo de acompañar a las personas a lograr una mejor
+        calidad de vida,<br></br>
+        atiendo en centros de salud integrales y en mi
+        consultorio privado.<br></br>
+        Me gusta leer, escribir y el cine.<br></br>
+        Convencido de que siempre en el problema, se encuentra la solución.
       </Text>
-      <Image
-        src={ja}
-        w={{ base: "350px", sm: "500px", md: "550px" }}
-        mx="auto"
-      />
     </Section>
   );
 };
 
 export default AboutMe;
-
-{
-  /* <Box as="section" bg="#f7fafc" id="about-me">
-<VStack
-  w={{ base: "90%", md: "70%" }}
-  mx="auto"
-  py={{ base: "140px", sm: "160px", md: "180px", xl: "200px" }}
-  data-aos="fade-up"
->
-  <Image
-    src={ja}
-    w={{ base: "350px", sm: "500px", md: "550px" }}
-    mx="auto"
-  />
-  <Box h="100%">
-    <Flex align="center" justify="center" w="full">
-      <Heading as="h2" color="#2d3748" textAlign="center">
-        {aboutMe && aboutMe.title}
-        <Box
-          borderTop="2px"
-          color="rgb(49 151 149)"
-          w="50%"
-          mx="auto"
-          mt={2}
-        />
-      </Heading>
-    </Flex>
-    <Text p={2} opacity="0.7" fontSize={{ base: "18px", md: "20px" }}>
-      {aboutMe && aboutMe.text}
-    </Text>
-  </Box>
-</VStack>
-</Box> */
-}

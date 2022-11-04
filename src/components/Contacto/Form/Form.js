@@ -1,36 +1,36 @@
+import { useRef } from "react";
 import {
   FormControl,
   Textarea,
   FormLabel,
   Input,
-  Button
+  Button,
+  Text
 } from "@chakra-ui/react";
 import { Formik } from "formik";
+import { useState } from "react";
 import AlertMsg from "./AlertMsg";
-import * as Yup from "yup";
-
+import { initialValue, validationSchema } from "./utils";
+import emailjs from '@emailjs/browser';
 const Form = () => {
-  const validationSchema = Yup.object().shape({
-    name: Yup.string().required("Name is required"),
-    email: Yup.string().email("Invalid email").required("Email is required"),
-    text: Yup.string().required("Text is required"),
-  });
-  const initialValue = {
-    name: "",
-    email: "",
-    text: "",
-  };
+  const [alertOpen, setAlertOpen] = useState(false);
 
-  const onSubmit = (values) => {
-    console.log(values);
-  };
+  const handleSubmit = (values) => {
+    emailjs.send('service_3u9hnel', 'template_59uzbvv', values, 'u7ZL62Z2eyKix27aY')
+    .then(res => {
+      setAlertOpen(true)
+      console.log(res)
+    })
+    .catch(e => console.log(e))
+  }
+
   return (
     <Formik
-      onSubmit={onSubmit}
+      onSubmit={handleSubmit}
       initialValues={initialValue}
       validationSchema={validationSchema}
     >
-      {({ values, handleChange, handleSubmit, errors }) => (
+      {({ values, handleChange, handleSubmit, touched, errors }) => (
         <form onSubmit={handleSubmit}>
           <FormControl>
             <FormLabel htmlFor="name" opacity="0.8">
@@ -39,13 +39,11 @@ const Form = () => {
             <Input
               size={{ base: "md", md: "lg" }}
               name="name"
-              colorScheme="teal"
-              variant="outline"
               value={values.name}
               onChange={handleChange}
-              
+              isInvalid={touched.text? Boolean(errors.text) : false}
             />
-            {errors.name && <div>{errors.name}</div>}
+            {touched.name && errors.name && <Text as='b' color='#E53E3E'>{errors.name}</Text>}
           </FormControl>
           <FormControl>
             <FormLabel htmlFor="email" opacity="0.8">
@@ -54,13 +52,11 @@ const Form = () => {
             <Input
               name="email"
               size={{ base: "md", md: "lg" }}
-              colorScheme="teal"
-              variant="outline"
               onChange={handleChange}
               value={values.email}
-              
+              isInvalid={touched.text? Boolean(errors.text) : false}
             />
-            {errors.email && <div>{errors.email}</div>}
+            {touched.email && errors.email && <Text as='b' color='#E53E3E'>{errors.email}</Text>}
           </FormControl>
           <FormControl>
             <FormLabel htmlFor="text" opacity="0.8">
@@ -70,12 +66,10 @@ const Form = () => {
               onChange={handleChange}
               name="text"
               size={{ base: "md", md: "lg" }}
-              colorScheme="teal"
-              variant="outline"
-              
               value={values.text}
+              isInvalid={touched.text? Boolean(errors.text) : false}
             />
-            {errors.text && <div>{errors.text}</div>}
+            {touched.text && errors.text && <Text as='b' color='#E53E3E'>{errors.text}</Text>}
           </FormControl>
           <Button
             size="lg"
@@ -86,7 +80,9 @@ const Form = () => {
           >
             Enviar
           </Button>
-          {/* {alertOpen && <AlertMsg alertOpen={alertOpen} setAlertOpen={setAlertOpen} />} */}
+          {alertOpen && (
+            <AlertMsg alertOpen={alertOpen} setAlertOpen={setAlertOpen} />
+          )}
         </form>
       )}
     </Formik>
