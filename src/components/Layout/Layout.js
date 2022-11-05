@@ -1,13 +1,13 @@
 import React from 'react'
 import {Flex, VStack} from "@chakra-ui/react";
 import Footer from '../Footer/Footer'
-import Head from '../Header/Head';
+import NavBar from '../Header/NavBar';
 
 const Layout = ({ children }) => {
   return (
     <>
       <VStack role="main" spacing={0}>
-        <Head />
+        <NavBar />
         <Flex flexDir="column" width="full">
           {children}
           <Footer />

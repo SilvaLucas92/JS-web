@@ -1,7 +1,5 @@
 import React from "react";
-import { Box, chakra, Flex, VStack, Button } from "@chakra-ui/react";
-import { EmailIcon } from "@chakra-ui/icons";
-import { Link } from "react-scroll";
+import { Box, chakra, Flex, VStack } from "@chakra-ui/react";
 const HeroPr = () => {
   return (
     <Box bg="#fffffe" id="hero" w="100%">
@@ -10,7 +8,7 @@ const HeroPr = () => {
         mx="auto"
         justify="center"
         align="center"
-        h="100vh"
+        h="90vh"
       >
         <Box w="full">
           <Box
