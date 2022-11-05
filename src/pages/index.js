@@ -1,22 +1,20 @@
 import React from "react";
 import AboutMe from "../components/AboutMe/AboutMe";
 import Contacto from "../components/Contacto/Contacto";
-import FrequentQuestions from "../components/FrequentQuestions/FrequentQuestions";
 import Hero from "../components/Hero/Hero";
 import Layout from "../components/Layout/Layout";
-import Modalidad from "../components/Modalidad/Modalidad";
+import WorkModality from "../components/WorkModality/WorkModality";
 import Servicios from "../components/Servicios/Servicios";
-import Terapia from "../components/Terapia/Terapia";
+import Therapy from "../components/Therapy/Therapy";
 
 const Home = () => {
   return (
     <Layout>
       <Hero />
       <AboutMe />
-      <Terapia />
+      <Therapy />
       <Servicios />
-      <Modalidad />
-      {/* <FrequentQuestions /> */}
+      <WorkModality />
       <Contacto />
     </Layout>
   );

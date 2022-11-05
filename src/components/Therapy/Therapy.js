@@ -1,6 +1,6 @@
 import { Text } from "@chakra-ui/react";
 import Section from "../Section/Section";
-function Terapia() {
+function Therapy() {
     return (
         <Section id="terapia" title="¿Qué es la terapia sistémica?">
         <Text
@@ -26,4 +26,4 @@ function Terapia() {
     );
 }
 
-export default Terapia;
+export default Therapy;

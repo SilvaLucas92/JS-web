@@ -1,15 +1,8 @@
-import { IconButton, Text, Center } from "@chakra-ui/react";
-import { AiOutlineArrowUp } from "react-icons/ai";
-import { animateScroll } from "react-scroll";
+import { Text } from "@chakra-ui/react";
 import SingleContact from "./SingleContact/SingleContact";
-import Form from "./Form/Form";
 import Section from "../Section/Section";
 
 const Contacto = () => {
-  const scrollToTop = () => {
-    animateScroll.scrollToTop();
-  };
-
   return (
     <Section id="contact-me" title="Contacto">
       <Text
@@ -23,18 +16,6 @@ const Contacto = () => {
         que te comuniques
       </Text>
       <SingleContact />
-      {/* <Form /> */}
-      <Center p={5}>
-        <IconButton
-          icon={<AiOutlineArrowUp />}
-          onClick={scrollToTop}
-          backgroundColor="#ffffff"
-          colorScheme="teal"
-          variant="outline"
-          fontSize="25px"
-          isRound="true"
-        />
-      </Center>
     </Section>
   );
 };
