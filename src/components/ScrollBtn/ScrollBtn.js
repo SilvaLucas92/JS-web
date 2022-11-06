@@ -32,7 +32,6 @@ function ScrollBtn() {
         bottom={BOTTOM}
         height={68}
         opacity={hasScrolled ? "1" : "0"}
-        pointerEvents={hasScrolled ? "initial" : "none"}
         position="fixed"
         right={RIGHT}
         rounded="full"

@@ -16,17 +16,7 @@ const Footer = () => {
         alignItems='center'
         color='gray.500'
         >
-            Made with   
-            <Icon
-            textAlign='center'
-            m={2}
-            color='red'
-            >
-                <AiFillHeart 
-                size='20px'
-                />
-            </Icon>
-            by Lucas Silva
+            Developed by Lucas Silva.
         </Text>
     </Flex>
     )

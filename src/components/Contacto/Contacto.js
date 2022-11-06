@@ -18,8 +18,7 @@ const Feature = ({ icon }) => {
   return (
     <Stack align="center">
       <Flex
-        w={16}
-        h={16}
+
         align={"center"}
         justify={"center"}
         rounded={"full"}
@@ -47,8 +46,9 @@ const Contacto = () => {
       <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
         <Feature
           icon={
-            <Tooltip label={"Send a messagge"} closeOnClick={false} hasArrow>
+            <Tooltip label={"Send a messagge"} hasArrow>
               <IconButton
+              as='a'
                 aria-label="whatsapp"
                 href="https://wa.link/9fq5vs"
                 variant="ghost"
@@ -87,10 +87,11 @@ const Contacto = () => {
         />
         <Feature
           icon={
-            <Tooltip label={"See where am I!"} closeOnClick={false} hasArrow>
+            <Tooltip label={"See where am I!"} hasArrow>
               <IconButton
-                aria-label="whatsapp"
-                href="https://wa.link/9fq5vs"
+                aria-label="gps"
+                as='a'
+                href='https://goo.gl/maps/826GDXv1k4fcTtor7'
                 variant="ghost"
                 size="lg"
                 fontSize="4xl"
