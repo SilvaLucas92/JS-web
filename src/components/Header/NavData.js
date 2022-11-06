@@ -1,14 +1,14 @@
 const navLinks = [
     {
-        section: 'About Me',
+        section: 'Sobre mi',
         to: 'about-me'
     },
     {
-        section: 'Nuestros servicios',
+        section: 'Mis servicios',
         to: 'services'
     },
     {
-        section: 'Preguntas Frecuentes',
+        section: 'Modalidad de trabajo',
         to: 'frequentQuestions'
     },
     {

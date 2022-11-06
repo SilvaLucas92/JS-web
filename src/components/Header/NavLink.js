@@ -4,7 +4,7 @@ import {
   import { Link } from "react-scroll";
 function Links({link, drawerOpen, onClose}) {
   return (
-    <>
+    <div>
       <Button m={2} variant="link">
         <Link
           to={link.to}
@@ -17,7 +17,7 @@ function Links({link, drawerOpen, onClose}) {
           {link.section}
         </Link>
       </Button>
-    </>
+    </div>
   );
 }
 

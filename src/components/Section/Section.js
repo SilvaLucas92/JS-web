@@ -12,7 +12,7 @@ const Section = ({ title, id, backgroundColor, children }) => {
       <Box
         w={{ base: "90%", md: "70%" }}
         mx="auto"
-        py={{ base: "140px", sm: "160px", md: "180px", xl: "200px" }}
+        py={{ base: "180px", sm: "180px", md: "200px", xl: "210px" }}
         data-aos="fade-up"
       >
         <Heading as="h2" color="#2d3748" textAlign="center" mb={10}>

@@ -95,6 +95,7 @@ const NavBar = () => {
                       link={oneLink}
                       drawerOpen={isOpen}
                       onClose={onClose}
+
                     />
                   );
                 })}
