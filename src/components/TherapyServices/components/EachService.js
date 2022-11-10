@@ -2,7 +2,7 @@ import { Stack, Text, VStack, GridItem } from "@chakra-ui/react";
 import Feature from "./Feature";
 function EachService({ data, title }) {
   return (
-    <VStack my={10} align={"center"} justify="center">
+    <VStack my={10} align={"center"}>
       <Text
         as="h3"
         color="#2d3748"

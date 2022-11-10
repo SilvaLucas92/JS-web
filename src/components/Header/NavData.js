@@ -9,7 +9,7 @@ const navLinks = [
     },
     {
         section: 'Modalidad de trabajo',
-        to: 'frequentQuestions'
+        to: 'WorkModality'
     },
     {
         section: 'Contacto',
