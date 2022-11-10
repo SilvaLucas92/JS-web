@@ -1,9 +1,8 @@
 import { Stack, Flex, SimpleGrid, Text, Icon } from "@chakra-ui/react";
 import Section from "../Section/Section";
-// import { FcFinePrint, FcCollaboration, FcBinoculars } from "react-icons/fc";
-import { IoIosChatbubbles } from "react-icons/io";
 import { BsSearch } from "react-icons/bs";
 import { MdOutlineGpsFixed } from "react-icons/md";
+import { RiWechatLine } from "react-icons/ri";
 const Feature = ({ title, text, icon }) => {
   return (
     <Stack>
@@ -42,7 +41,7 @@ const Modalidad = () => {
           }
         />
         <Feature
-          icon={<Icon as={IoIosChatbubbles} w={10} h={10} />}
+          icon={<Icon as={RiWechatLine} w={10} h={10} />}
           title={"Tratamiento"}
           text={
             "Esta segunda etapa es la más larga, el tratamiento propiamente dicho, cuya duración variará dependiendo de los factores del problema, el ritmo de cambio, la motivación, etc. Aquí es cuando se aplican las técnicas adaptadas a cada problema, dirigidas a alcanzar los objetivos planteados.  Con el fin de lograr un buen entrenamiento, se te brindarán tareas entre sesiones, para afianzar el aprendizaje."

@@ -1,11 +1,12 @@
 import React from "react";
 import AboutMe from "../components/AboutMe/AboutMe";
-import Contacto from "../components/Contacto/Contacto";
+import Contact from "../components/Contact/Contact";
 import Hero from "../components/Hero/Hero";
 import Layout from "../components/Layout/Layout";
 import WorkModality from "../components/WorkModality/WorkModality";
 import Servicios from "../components/Servicios/Servicios";
 import Therapy from "../components/Therapy/Therapy";
+import TherapyServices from "../components/TherapyServices/TherapyServices";
 
 const Home = () => {
   return (
@@ -13,9 +14,10 @@ const Home = () => {
       <Hero />
       <AboutMe />
       <Therapy />
-      <Servicios />
+      <TherapyServices />
+      {/* <Servicios /> */}
       <WorkModality />
-      <Contacto />
+      <Contact />
     </Layout>
   );
 };

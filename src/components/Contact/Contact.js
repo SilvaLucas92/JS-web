@@ -3,13 +3,10 @@ import {
   Flex,
   SimpleGrid,
   Text,
-  Icon,
   IconButton,
-  Button,
   Tooltip,
   useClipboard,
 } from "@chakra-ui/react";
-import { FcFinePrint, FcCollaboration, FcBinoculars } from "react-icons/fc";
 import { BsWhatsapp } from "react-icons/bs";
 import { AiOutlineMail } from "react-icons/ai";
 import { GoLocation } from "react-icons/go";
@@ -17,20 +14,14 @@ import Section from "../Section/Section";
 const Feature = ({ icon }) => {
   return (
     <Stack align="center">
-      <Flex
-
-        align={"center"}
-        justify={"center"}
-        rounded={"full"}
-        mb={1}
-      >
+      <Flex align={"center"} justify={"center"} rounded={"full"} mb={1}>
         {icon}
       </Flex>
     </Stack>
   );
 };
 
-const Contacto = () => {
+const Contact = () => {
   const { hasCopied, onCopy } = useClipboard("example@example.com");
   return (
     <Section id="contact-me" title="Contacto" backgroundColor="#f7fafc">
@@ -48,7 +39,7 @@ const Contacto = () => {
           icon={
             <Tooltip label={"Send a messagge"} hasArrow>
               <IconButton
-              as='a'
+                as="a"
                 aria-label="whatsapp"
                 href="https://wa.link/9fq5vs"
                 variant="ghost"
@@ -56,7 +47,7 @@ const Contacto = () => {
                 fontSize="4xl"
                 icon={<BsWhatsapp />}
                 _hover={{
-                  bg:"#4FD1C5"
+                  bg: "#4FD1C5",
                 }}
                 isRound
               />
@@ -77,7 +68,7 @@ const Contacto = () => {
                 fontSize="4xl"
                 icon={<AiOutlineMail />}
                 _hover={{
-                  bg:"#4FD1C5"
+                  bg: "#4FD1C5",
                 }}
                 onClick={onCopy}
                 isRound
@@ -90,14 +81,14 @@ const Contacto = () => {
             <Tooltip label={"See where am I!"} hasArrow>
               <IconButton
                 aria-label="gps"
-                as='a'
-                href='https://goo.gl/maps/826GDXv1k4fcTtor7'
+                as="a"
+                href="https://goo.gl/maps/826GDXv1k4fcTtor7"
                 variant="ghost"
                 size="lg"
                 fontSize="4xl"
                 icon={<GoLocation />}
                 _hover={{
-                  bg:"#4FD1C5"
+                  bg: "#4FD1C5",
                 }}
                 isRound
               />
@@ -109,4 +100,4 @@ const Contacto = () => {
   );
 };
 
-export default Contacto;
+export default Contact;

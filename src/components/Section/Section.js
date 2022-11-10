@@ -6,7 +6,6 @@ const Section = ({ title, id, backgroundColor, children }) => {
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
-  console.log(title);
   return (
     <Box id={id} bg={backgroundColor? backgroundColor : 'white'} as="section" w="full">
       <Box
