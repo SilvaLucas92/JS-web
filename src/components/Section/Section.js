@@ -7,14 +7,30 @@ const Section = ({ title, id, backgroundColor, children }) => {
     Aos.init({ duration: 2000 });
   }, []);
   return (
-    <Box id={id} bg={backgroundColor? backgroundColor : 'white'} as="section" w="full">
+    <Box
+      id={id}
+      bg={backgroundColor ? backgroundColor : "white"}
+      as="section"
+      w="full"
+    >
       <Box
         w={{ base: "90%", md: "70%" }}
         mx="auto"
         py={{ base: "180px", sm: "180px", md: "200px", xl: "210px" }}
         data-aos="fade-up"
       >
-        <Heading as="h2" color="#2d3748" textAlign="center" mb={10}>
+        <Heading
+          as="h2"
+          color="#2d3748"
+          textAlign="center"
+          mb={10}
+          fontSize={{
+            base: "3xl",
+            sm: "4xl",
+            md: "5xl",
+            lg: "6xl",
+          }}
+        >
           {title ? title : ""}
           <Box
             borderTop="2px"

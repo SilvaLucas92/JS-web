@@ -2,8 +2,8 @@ import { Flex, Icon, Box, Text } from "@chakra-ui/react";
 
 const Feature = ({ title, children }) => {
   return (
-    <Flex>
-      <Flex>
+    <Flex textAlign='center'>
+      {/* <Flex>
         <Icon boxSize={5} mt={1}>
           <path
             fillRule="evenodd"
@@ -11,12 +11,12 @@ const Feature = ({ title, children }) => {
             clipRule="evenodd"
           ></path>
         </Icon>
-      </Flex>
+      </Flex> */}
       <Box >
         <Text
           as="h3"
           color="#2d3748"
-          fontSize={{ base: "18px", md: "20px" }}
+          fontSize={{ base: "20px", md: "22px" }}
         >
           {title}
         </Text>

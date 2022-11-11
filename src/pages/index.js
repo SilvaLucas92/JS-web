@@ -12,9 +12,7 @@ const Home = () => {
     <Layout>
       <Hero />
       <AboutMe />
-      <Therapy />
       <TherapyServices />
-      <WorkModality />
       <Contact />
     </Layout>
   );
