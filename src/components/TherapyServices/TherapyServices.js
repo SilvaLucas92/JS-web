@@ -16,20 +16,17 @@ function TherapyServices() {
             mb={24}
             spacingY={{
               base: 10,
-              md: 32,
+              md: 15,
             }}
             spacingX={{
               base: 10,
-              md: 24,
+              md: 15,
             }}
           >
             <Box>
               <chakra.h2
                 mb={4}
-                fontSize={{
-                  base: "2xl",
-                  md: "4xl",
-                }}
+                fontSize={'3xl'}
                 textAlign={{
                   base: "center",
                   md: "left",
@@ -42,9 +39,7 @@ function TherapyServices() {
                   base: "center",
                   sm: "left",
                 }}
-                opacity="0.7"
-                fontSize={{ base: "18px", md: "20px" }}
-                letterSpacing="wider"
+                textStyle='text'
               >
                 Un espacio destinado a profesionales de la salud mental que
                 estén interesados en supervisar su caso desde una perspectiva
@@ -68,11 +63,11 @@ function TherapyServices() {
             mb={24}
             spacingY={{
               base: 10,
-              md: 32,
+              md: 15,
             }}
             spacingX={{
               base: 10,
-              md: 24,
+              md: 15,
             }}
           >
             <Box
@@ -83,10 +78,7 @@ function TherapyServices() {
             >
               <chakra.h2
                 mb={4}
-                fontSize={{
-                  base: "2xl",
-                  md: "4xl",
-                }}
+                fontSize={'3xl'}
                 textAlign={{
                   base: "center",
                   md: "left",
@@ -99,9 +91,7 @@ function TherapyServices() {
                   base: "center",
                   sm: "left",
                 }}
-                opacity="0.7"
-                fontSize={{ base: "18px", md: "20px" }}
-                letterSpacing="wider"
+                textStyle='text'
               >
                 Un espacio destinado a profesionales de la salud mental que
                 estén interesados en supervisar su caso desde una perspectiva

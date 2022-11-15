@@ -8,10 +8,8 @@ function Therapy() {
     >
       <Text
         p={4}
-        opacity="0.7"
-        fontSize={{ base: "18px", md: "20px" }}
+        textStyle='p'
         textAlign="center"
-        letterSpacing="wider"
       >
         La terapia sistémica es un enfoque psicoterapéutico cuyo objeto de
         estudio y campo de intervención son las interacciones que se dan en todo

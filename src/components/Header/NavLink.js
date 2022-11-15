@@ -5,7 +5,7 @@ import {
 function Links({link, drawerOpen, onClose}) {
   return (
     <div>
-      <Button m={2} variant="link">
+      <Button m={2} variant="link" size='lg'>
         <Link
           to={link.to}
           spy={true}

@@ -30,7 +30,7 @@ const NavBar = () => {
     >
       <Flex>
         <HStack
-          w={{ base: "90%", md: "70%" }}
+          w={{ base: "90%", md: "80%", xl:'75%' }}
           mx="auto"
           justify="space-between"
           align="center"

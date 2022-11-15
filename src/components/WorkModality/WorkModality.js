@@ -5,10 +5,10 @@ import { MdOutlineGpsFixed } from "react-icons/md";
 import { RiWechatLine } from "react-icons/ri";
 const Feature = ({ title, text, icon }) => {
   return (
-    <Stack border='solid 1px red'>
-      <Flex w={"full"} align={"center"} justify={"center"} mb={1}>
+    <Stack>
+      {/* <Flex w={"full"}  mb={1}>
         {icon}
-      </Flex>
+      </Flex> */}
       <Text
         as="h3"
         color="#2d3748"
@@ -18,7 +18,7 @@ const Feature = ({ title, text, icon }) => {
       >
         {title}
       </Text>
-      <Text letterSpacing="wider" fontSize={{ base: "18px", md: "20px" }} opacity="0.7">
+      <Text textStyle='text'>
         {text}
       </Text>
     </Stack>
@@ -32,7 +32,7 @@ const Modalidad = () => {
       title="Modalidad de trabajo"
       backgroundColor="#f7fafc"
     >
-      <SimpleGrid columns={{ base: 1, lg: 3 }} spacing={2} textAlign="center">
+      <SimpleGrid columns={{ base: 1, lg: 3 }} spacing={5} >
         <Feature
           icon={<Icon as={BsSearch} w={8} h={8} opacity="0.7" />}
           title={"Evaluacion"}

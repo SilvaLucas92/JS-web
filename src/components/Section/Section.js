@@ -14,7 +14,7 @@ const Section = ({ title, id, backgroundColor, children }) => {
         py={{ base: "200px", sm: "200px", md: "200px", xl: "210px" }}
         // data-aos="fade-up"
       >
-        <Heading as="h2" color="#2d3748" textAlign="center" mb={'50px'} size={'2xl'}>
+        <Heading as="h2" color="#2d3748" textAlign="center" mb={'50px'} size={'2xl'} fontWeight='semibold'>
           {title ? title : ""}
           <Box
             borderTop="2px"
