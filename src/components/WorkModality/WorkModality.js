@@ -60,7 +60,7 @@ const Modalidad = () => {
           }
         />
       </SimpleGrid>
-    </>
+    </Section>
   );
 };
 

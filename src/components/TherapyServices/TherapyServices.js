@@ -26,7 +26,7 @@ function TherapyServices() {
             <Box>
               <chakra.h2
                 mb={4}
-                fontSize={'3xl'}
+                fontSize={"3xl"}
                 textAlign={{
                   base: "center",
                   md: "left",
@@ -39,7 +39,7 @@ function TherapyServices() {
                   base: "center",
                   sm: "left",
                 }}
-                textStyle='text'
+                textStyle="text"
               >
                 Un espacio destinado a profesionales de la salud mental que
                 estén interesados en supervisar su caso desde una perspectiva
@@ -78,7 +78,7 @@ function TherapyServices() {
             >
               <chakra.h2
                 mb={4}
-                fontSize={'3xl'}
+                fontSize={"3xl"}
                 textAlign={{
                   base: "center",
                   md: "left",
@@ -91,7 +91,7 @@ function TherapyServices() {
                   base: "center",
                   sm: "left",
                 }}
-                textStyle='text'
+                textStyle="text"
               >
                 Un espacio destinado a profesionales de la salud mental que
                 estén interesados en supervisar su caso desde una perspectiva

@@ -25,12 +25,7 @@ const Contact = () => {
   const { hasCopied, onCopy } = useClipboard("example@example.com");
   return (
     <Section id="contact-me" title="Contacto" backgroundColor="#f7fafc">
-      <Text
-        textAlign="center"
-        textStyle='p'
-        p={4}
-        mb={10}
-      >
+      <Text textAlign="center" textStyle="p" p={4} mb={10}>
         Si tenes alguna duda y queres escribirnos, te dejamo tos los medio para
         que te comuniques
       </Text>
