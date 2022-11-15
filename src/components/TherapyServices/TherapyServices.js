@@ -11,7 +11,7 @@ function TherapyServices() {
             alignItems="start"
             columns={{
               base: 1,
-              md: 2,
+              lg: 2,
             }}
             mb={24}
             spacingY={{
@@ -57,7 +57,7 @@ function TherapyServices() {
             alignItems="center"
             columns={{
               base: 1,
-              md: 2,
+              lg: 2,
             }}
             flexDirection="column-reverse"
             mb={24}

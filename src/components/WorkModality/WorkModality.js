@@ -18,9 +18,7 @@ const Feature = ({ title, text, icon }) => {
       >
         {title}
       </Text>
-      <Text textStyle='text'>
-        {text}
-      </Text>
+      <Text textStyle="text">{text}</Text>
     </Stack>
   );
 };
@@ -32,7 +30,14 @@ const Modalidad = () => {
       title="Modalidad de trabajo"
       backgroundColor="#f7fafc"
     >
-      <SimpleGrid columns={{ base: 1, lg: 3 }} spacing={5} >
+      <SimpleGrid
+        columns={{ base: 1, lg: 3 }}
+        spacing={5}
+        textAlign={{
+          base: "center",
+          md: "left",
+        }}
+      >
         <Feature
           icon={<Icon as={BsSearch} w={8} h={8} opacity="0.7" />}
           title={"Evaluacion"}
