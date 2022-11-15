@@ -7,8 +7,8 @@ import ScrollBtn from '../ScrollBtn/ScrollBtn';
 const Layout = ({ children }) => {
   return (
     <>
-      <VStack role="main" spacing={0}>
         <NavBar />
+      <VStack role="main" spacing={0}>
         <Flex flexDir="column" width="full">
           {children}
           <ScrollBtn />

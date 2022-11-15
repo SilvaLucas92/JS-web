@@ -5,7 +5,7 @@ import { MdOutlineGpsFixed } from "react-icons/md";
 import { RiWechatLine } from "react-icons/ri";
 const Feature = ({ title, text, icon }) => {
   return (
-    <Stack>
+    <Stack border='solid 1px red'>
       <Flex w={"full"} align={"center"} justify={"center"} mb={1}>
         {icon}
       </Flex>
@@ -18,7 +18,7 @@ const Feature = ({ title, text, icon }) => {
       >
         {title}
       </Text>
-      <Text fontSize={{ base: "18px", md: "20px" }} opacity="0.7">
+      <Text letterSpacing="wider" fontSize={{ base: "18px", md: "20px" }} opacity="0.7">
         {text}
       </Text>
     </Stack>
@@ -32,26 +32,26 @@ const Modalidad = () => {
       title="Modalidad de trabajo"
       backgroundColor="#f7fafc"
     >
-      <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10} textAlign="center">
+      <SimpleGrid columns={{ base: 1, lg: 3 }} spacing={2} textAlign="center">
         <Feature
-          icon={<Icon as={BsSearch} w={8} h={8} opacity="0.7"/>}
+          icon={<Icon as={BsSearch} w={8} h={8} opacity="0.7" />}
           title={"Evaluacion"}
           text={
-            "En esta primera etapa, la finalidad es la obtención de toda la información necesaria sobre el problema objeto de la consulta. Se detallan los factores que han influído en la aparición del conflicto y aquellos que lo mantienen, brindándote Psicoeducación y estableciendo conjuntamente los objetivos del tratamiento. La duración de esta fase es entre 3 y 5 sesiones."
+            "Es el primer paso desde que se pacta un día y un horario para la primera consulta. La evaluación consta de un número de entrevistas, en las cuáles se escucha el motivo de la consulta, se detectan los problemas y malestares y se plantea un tratamiento para la solución de los mismos. Cabe aclarar que luego de este proceso, muchas veces, no es necesario un tratamiento y que con algunas consultas más el problema puede estar resuelto. "
           }
         />
         <Feature
-          icon={<Icon as={RiWechatLine} w={8} h={8} opacity="0.7"/>}
+          icon={<Icon as={RiWechatLine} w={8} h={8} opacity="0.7" />}
           title={"Tratamiento"}
           text={
-            "Esta segunda etapa es la más larga, el tratamiento propiamente dicho, cuya duración variará dependiendo de los factores del problema, el ritmo de cambio, la motivación, etc. Aquí es cuando se aplican las técnicas adaptadas a cada problema, dirigidas a alcanzar los objetivos planteados.  Con el fin de lograr un buen entrenamiento, se te brindarán tareas entre sesiones, para afianzar el aprendizaje."
+            "De haber sido necesario e indicado, se continúa con el tratamiento que consta de una serie de sesiones donde se trabaja junto al consultante para poder ayudarlo a resolver los problemas por los cuales consultó. Con adolescentes y adultos se utiliza la conversación como herramienta fundamental pero también existen otras técnicas que puedan ser de ayuda durante el proceso terapéutico. Con niños y adolescentes que aún sean un poco mas tímidos o de pocas palabras, se utilizan, además de la conversación, el dibujo y el juego como herramientas adicionales. Con familias y parejas el proceso es similar, aunque con la diferencia que se aplican otro tipo de técnicas que en la terapia individual. La conversación, el acompañamiento y la escucha es el denominador común entre todos los tratamientos posibles.  "
           }
         />
         <Feature
-          icon={<Icon as={MdOutlineGpsFixed} w={8} h={8} opacity="0.7"/>}
+          icon={<Icon as={MdOutlineGpsFixed} w={8} h={8} opacity="0.7" />}
           title={"Seguimiento"}
           text={
-            "La tercera etapa está orientada a mantener los cambios que has conseguido y prevenir recaídas. El objetivo es que puedas poner en práctica todo lo aprendido y convertirte en tu “propio terapeuta”. Durante esta fase se van espaciando las frecuencias de las sesiones (quincenales, mensuales) y en el momento en que se considera que se han alcanzado los objetivos se te brinda el alta terapéutico."
+            "Por último, tenemos la etapa de seguimiento que se trata de acompañar al paciente, a la pareja o la familia luego de que se haya resuelto el motivo de consulta. Se trata de unas últimas sesiones donde se conversa sobre los logros alcanzados y se piensan estrategias para la prevención de recaídas. Se les informa a los consultantes que una terapia no soluciona todos los problemas, pero si puede solucionar algunos y que esta experiencia satisfactoria puede ser la base para que la persona, la pareja o la familia puedan resolver sus problemas futuros por sí misma.    "
           }
         />
       </SimpleGrid>

@@ -1,29 +1,27 @@
 import { Text } from "@chakra-ui/react";
 import Section from "../Section/Section";
 function Therapy() {
-    return (
-        <Section id="terapia" title="¿Qué es la terapia sistémica?">
-        <Text
-            p={2}
-            opacity="0.7"
-            fontSize={{ base: "18px", md: "20px" }}
-            textAlign="center"
-        >
-            La Terapia Cognitivo Conductual (TCC) es una forma de tratamiento
-            psicológico de orientación práctica, que utiliza procedimientos
-            validados por la ciencia. Es de corta duración, ya que se se trabaja por
-            objetivos, los cuales se acuerdan previamente de manera conjunta. Se
-            enfoca en el presente inmediato, a resolver los problemas del “aquí y
-            ahora”. Se parte del supuesto de que Pensamientos, Emociones y Conductas
-            están interconectados. Adquirirás habilidades y estrategias efectivas
-            que te ayuden a identificar y modificar tus pensamientos distorsionados;
-            lo cual conlleva asimismo un cambio en la forma en que te sientes y
-            actúas, logrando respuestas más adaptativas a tu vida. La idea es que te
-            vuelvas “tu propio terapeuta” y tengas las herramientas necesarias para
-            lidiar con los obstáculos que encuentres a futuro en tu vida cotidiana.
-        </Text>
-        </Section>
-    );
+  return (
+    <Section
+      id="terapia"
+      title="¿Qué es la Terapia Sistémica?"
+    >
+      <Text
+        p={4}
+        opacity="0.7"
+        fontSize={{ base: "18px", md: "20px" }}
+        textAlign="center"
+        letterSpacing="wider"
+      >
+        La terapia sistémica es un enfoque psicoterapéutico cuyo objeto de
+        estudio y campo de intervención son las interacciones que se dan en todo
+        tipo de vínculos: Familia, Pareja, Amistad, Trabajo, Estudio o cualquier
+        otra relación o sistema donde circule algún tipo de intercambio. Las
+        técnicas utilizadas están orientadas a la solución de problemas en el
+        menor tiempo posible, teniendo como objetivo, el cambio terapéutico.
+      </Text>
+    </Section>
+  );
 }
 
 export default Therapy;

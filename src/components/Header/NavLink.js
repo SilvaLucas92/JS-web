@@ -11,7 +11,7 @@ function Links({link, drawerOpen, onClose}) {
           spy={true}
           smooth={true}
           offset={100}
-          duration={800}
+          duration={1500}
           onClick={drawerOpen? onClose : null}
         >
           {link.section}

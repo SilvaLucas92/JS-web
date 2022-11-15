@@ -1,44 +1,122 @@
 import React from "react";
 import Section from "../Section/Section";
-import EachService from "./components/EachService";
-const data = [
-    {
-        id: 1,
-        title: 'Niños y Adolecentes',
-        description: 'Dificultades escolares, problemas en la conducta, timidez, bullying, miedos/fobias, dificultades en el control de esfinteres, trastornos en la conducta alimentaria, trastornos en el sueño.'
-    },
-    {
-        id: 2,
-        title: 'Adultos',
-        description: 'fobia, llanto, problemas de socializacion, fobia, llanto, problemas de socializacion'
-    },
-    {
-        id: 3,
-        title: 'Familia',
-        description: 'fobia, llanto, problemas de socializacion, fobia, llanto, problemas de socializacion'
-    },
-    {
-        id: 4,
-        title: 'Parejas',
-        description: 'fobia, llanto, problemas de socializacion, fobia, llanto, problemas de socializacion'
-    }
-  ]
-  const data2 = [
-    {
-        id: 1,
-        title: 'Niños y Adolecentes',
-        description: 'Dificultades escolares, problemas en la conducta, timidez, bullying, miedos/fobias, dificultades en el control de esfinteres, trastornos en la conducta alimentaria, trastornos en el sueño.'
-    },
-    {
-        id: 2,
-        title: 'Adultos',
-        description: 'fobia, llanto, problemas de socializacion, fobia, llanto, problemas de socializacion'
-    }]
+import { Flex, Box, Text, chakra, SimpleGrid } from "@chakra-ui/react";
+
 function TherapyServices() {
   return (
-    <Section id="services" title="Servicios">
-        <EachService title='Atencion Clinica' data={data}/>
-        <EachService title='Revisiones' data={data2}/>
+    <Section id="services" title="Mis servicios">
+      <Flex w="full" justifyContent="center" alignItems="center">
+        <Box mx="auto">
+          <SimpleGrid
+            alignItems="start"
+            columns={{
+              base: 1,
+              md: 2,
+            }}
+            mb={24}
+            spacingY={{
+              base: 10,
+              md: 32,
+            }}
+            spacingX={{
+              base: 10,
+              md: 24,
+            }}
+          >
+            <Box>
+              <chakra.h2
+                mb={4}
+                fontSize={{
+                  base: "2xl",
+                  md: "4xl",
+                }}
+                textAlign={{
+                  base: "center",
+                  md: "left",
+                }}
+              >
+                Tratamientos psicológicos
+              </chakra.h2>
+              <Text
+                textAlign={{
+                  base: "center",
+                  sm: "left",
+                }}
+                opacity="0.7"
+                fontSize={{ base: "18px", md: "20px" }}
+                letterSpacing="wider"
+              >
+                Un espacio destinado a profesionales de la salud mental que
+                estén interesados en supervisar su caso desde una perspectiva
+                sistémica. No es excluyente que sean terapeutas que trabajen
+                desde este marco teórico, puede que no lo sean y se construya un
+                espacio de intercambio desde su disciplina y desde la sistémica
+                que pueda ampliar y enriquecer la lectura, la orientación y las
+                intervenciones del tratamiento que se esté realizando. Las
+                supervisiones pueden ser en forma presencial o virtual.
+              </Text>
+            </Box>
+            <Box w="full" h="full" py={48} bg="gray.200"></Box>
+          </SimpleGrid>
+          <SimpleGrid
+            alignItems="center"
+            columns={{
+              base: 1,
+              md: 2,
+            }}
+            flexDirection="column-reverse"
+            mb={24}
+            spacingY={{
+              base: 10,
+              md: 32,
+            }}
+            spacingX={{
+              base: 10,
+              md: 24,
+            }}
+          >
+            <Box
+              order={{
+                base: "initial",
+                md: 2,
+              }}
+            >
+              <chakra.h2
+                mb={4}
+                fontSize={{
+                  base: "2xl",
+                  md: "4xl",
+                }}
+                textAlign={{
+                  base: "center",
+                  md: "left",
+                }}
+              >
+                Supervisiones
+              </chakra.h2>
+              <Text
+                textAlign={{
+                  base: "center",
+                  sm: "left",
+                }}
+                opacity="0.7"
+                fontSize={{ base: "18px", md: "20px" }}
+                letterSpacing="wider"
+              >
+                Un espacio destinado a profesionales de la salud mental que
+                estén interesados en supervisar su caso desde una perspectiva
+                sistémica. No es excluyente que sean terapeutas que trabajen
+                desde este marco teórico, puede que no lo sean y se construya un
+                espacio de intercambio desde su disciplina y desde la sistémica
+                que pueda ampliar y enriquecer la lectura, la orientación y las
+                intervenciones del tratamiento que se esté realizando. Las
+                supervisiones pueden ser en forma presencial o virtual.
+              </Text>
+            </Box>
+            <Box w="full" h="full" py={48} bg="gray.200"></Box>
+          </SimpleGrid>
+        </Box>
+      </Flex>
     </Section>
   );
 }

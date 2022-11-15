@@ -2,9 +2,9 @@ import React from "react";
 import { Box, chakra, Flex, VStack } from "@chakra-ui/react";
 const HeroPr = () => {
   return (
-    <Box bg="#fffffe" id="hero" w="100%">
+    <Box bg="#fffffe" id="hero" w="100%" border='solid 1px red'>
       <Flex
-        w={{ base: "90%", md: "70%" }}
+        w={{ base: "90%", md: "70%", xl:'60%' }}
         mx="auto"
         justify="center"
         align="center"

@@ -29,6 +29,7 @@ const Contact = () => {
         textAlign="center"
         fontSize={{ base: "18px", md: "20px" }}
         opacity="0.8"
+        p={4}
         mb={10}
       >
         Si tenes alguna duda y queres escribirnos, te dejamo tos los medio para
