@@ -1,7 +1,13 @@
 import { extendTheme } from "@chakra-ui/react";
-
-
+import "@fontsource/poppins"
+import "@fontsource/roboto"
+import "@fontsource/open-sans"
 const theme = extendTheme({
+  
+  fonts: {
+    body: 'roboto, poppins, open-sans',
+    heading: 'roboto, poppins, open-sans',
+  },
   textStyles: {
     p: {
       fontSize: {
@@ -22,8 +28,8 @@ const theme = extendTheme({
       },
       opacity: "0.7",
       letterSpacing: "wider",
-    },
-  },
+    }
+  }
 });
 
 export default theme;
