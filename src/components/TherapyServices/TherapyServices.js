@@ -73,7 +73,7 @@ function TherapyServices() {
             <Box
               order={{
                 base: "initial",
-                md: 2,
+                lg: 2,
               }}
             >
               <chakra.h2
@@ -83,7 +83,7 @@ function TherapyServices() {
                   base: "center",
                   md: "left",
                 }}
-              >
+              > 
                 Supervisiones
               </chakra.h2>
               <Text
