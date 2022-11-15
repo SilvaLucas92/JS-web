@@ -3,19 +3,6 @@ import Feature from "./Feature";
 function EachService({ data, title }) {
   return (
     <VStack my={10} align={"center"}>
-      <Heading
-        as="h3"
-        color="#2d3748"
-        textAlign="center"
-        mb={10}
-        fontSize={{
-          base: "2xl",
-          sm: "3xl",
-          lg: "4xl",
-        }}
-      >
-        {title}
-      </Heading>
       <GridItem colSpan={2}>
         <Stack
           spacing={{
@@ -29,10 +16,10 @@ function EachService({ data, title }) {
             lg: "repeat(2,1fr)",
           }}
           gridColumnGap={{
-            lg: 8,
+            lg: 10,
           }}
           gridRowGap={{
-            lg: 10,
+            lg: 12,
           }}
         >
           {data.map((item, index) => {

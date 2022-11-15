@@ -27,8 +27,8 @@ const Contact = () => {
     <Section id="contact-me" title="Contacto" backgroundColor="#f7fafc">
       <Text
         textAlign="center"
-        fontSize={{ base: "18px", md: "20px" }}
-        opacity="0.8"
+        textStyle='p'
+        p={4}
         mb={10}
       >
         Si tenes alguna duda y queres escribirnos, te dejamo tos los medio para

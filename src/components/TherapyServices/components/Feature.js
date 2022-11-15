@@ -2,21 +2,11 @@ import { Flex, Icon, Box, Text } from "@chakra-ui/react";
 
 const Feature = ({ title, children }) => {
   return (
-    <Flex textAlign='center'>
-      {/* <Flex>
-        <Icon boxSize={5} mt={1}>
-          <path
-            fillRule="evenodd"
-            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-            clipRule="evenodd"
-          ></path>
-        </Icon>
-      </Flex> */}
+    <Flex textAlign='center' bg='white' p={10} border='solid 1px red'>
       <Box >
         <Text
           as="h3"
-          color="#2d3748"
-          fontSize={{ base: "20px", md: "22px" }}
+          fontSize={{ base: "18px", md: "20px" }}
         >
           {title}
         </Text>

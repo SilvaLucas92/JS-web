@@ -10,8 +10,7 @@ import {
   DrawerOverlay,
   useDisclosure,
   VStack,
-  Icon,
-  Stack,
+  Stack
 } from "@chakra-ui/react";
 import { AiOutlineAlignRight, AiOutlineClose } from "react-icons/ai";
 import NavData from "./NavData";
@@ -21,17 +20,17 @@ const NavBar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <Box
-      as="nav"
+      as="header"
       w="full"
       top={0}
       bg="#ffffff"
       position={"sticky"}
-      zIndex={"modal"}
-      boxShadow="2xl"
+      zIndex='99999'
+      boxShadow= {isOpen? '' : "xl"}
     >
       <Flex>
         <HStack
-          w={{ base: "90%", md: "70%" }}
+          w={{ base: "90%", md: "80%", xl:'75%' }}
           mx="auto"
           justify="space-between"
           align="center"
@@ -47,8 +46,8 @@ const NavBar = () => {
           <Heading display={{ base: "block", lg: "none" }}>JS</Heading>
           <Flex display={{ lg: "none" }}>
             <IconButton
-              icon={<AiOutlineAlignRight />}
-              onClick={onOpen}
+              icon={isOpen? <AiOutlineClose /> : <AiOutlineAlignRight />}
+              onClick={isOpen? onClose : onOpen}
               fontSize={22}
               isRound="true"
               backgroundColor="#ffffff"
@@ -79,14 +78,7 @@ const NavBar = () => {
         <DrawerOverlay p={0} />
         <DrawerContent>
           <DrawerBody>
-            <VStack mb={10} mt={4}>
-              <Icon
-                _hover={{ cursor: "pointer" }}
-                as={AiOutlineClose}
-                fontSize={22}
-                position="center"
-                onClick={onClose}
-              />
+            <VStack mb={10} mt={4} pt={10} zIndex={1}>
               <Stack align="center" pt={10} spacing={10}>
                 {NavData.map((oneLink, index) => {
                   return (

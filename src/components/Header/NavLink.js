@@ -5,13 +5,13 @@ import {
 function Links({link, drawerOpen, onClose}) {
   return (
     <div>
-      <Button m={2} variant="link">
+      <Button m={2} variant="link" size='lg'>
         <Link
           to={link.to}
           spy={true}
           smooth={true}
           offset={100}
-          duration={800}
+          duration={1500}
           onClick={drawerOpen? onClose : null}
         >
           {link.section}

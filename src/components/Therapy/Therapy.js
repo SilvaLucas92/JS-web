@@ -1,29 +1,24 @@
-import { Text, Heading } from "@chakra-ui/react";
-function Therapy({title, children}) {
+import { Text } from "@chakra-ui/react";
+import Section from "../Section/Section";
+function Therapy() {
   return (
-    <>
-      <Heading
-        as="h3"
-        color="#2d3748"
-        textAlign="center"
-        my={10}
-        fontSize={{
-          base: "2xl",
-          sm: "3xl",
-          lg: "4xl",
-        }}
-      >
-        {title}
-      </Heading>
+    <Section
+      id="terapia"
+      title="¿Qué es la Terapia Sistémica?"
+    >
       <Text
-        p={5}
-        opacity="0.7"
-        fontSize={{ base: "18px", md: "20px" }}
+        p={4}
+        textStyle='p'
         textAlign="center"
       >
-        {children}
+        La terapia sistémica es un enfoque psicoterapéutico cuyo objeto de
+        estudio y campo de intervención son las interacciones que se dan en todo
+        tipo de vínculos: Familia, Pareja, Amistad, Trabajo, Estudio o cualquier
+        otra relación o sistema donde circule algún tipo de intercambio. Las
+        técnicas utilizadas están orientadas a la solución de problemas en el
+        menor tiempo posible, teniendo como objetivo, el cambio terapéutico.
       </Text>
-    </>
+    </Section>
   );
 }
 
