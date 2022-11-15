@@ -1,4 +1,4 @@
-import { Stack, Flex, SimpleGrid, Text, Icon, Heading } from "@chakra-ui/react";
+import { Stack, SimpleGrid, Text, Icon } from "@chakra-ui/react";
 import Section from "../Section/Section";
 import { BsSearch } from "react-icons/bs";
 import { MdOutlineGpsFixed } from "react-icons/md";

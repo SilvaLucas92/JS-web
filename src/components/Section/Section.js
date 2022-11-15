@@ -2,10 +2,10 @@ import { useEffect } from "react";
 import { Box, Heading } from "@chakra-ui/react";
 import Aos from "aos";
 import "aos/dist/aos.css";
-const Section = ({ title, id, backgroundColor, children }) => {
-  useEffect(() => {
-    Aos.init({ duration: 2000 });
-  }, []);
+const Section = ({ title, id, backgroundColor, children, paddingBottom }) => {
+  // useEffect(() => {
+  //   Aos.init({ duration: 2000 });
+  // }, []);
   return (
     <Box
       id={id}
@@ -16,7 +16,8 @@ const Section = ({ title, id, backgroundColor, children }) => {
       <Box
         w={{ base: "90%", md: "80%", xl: "75%" }}
         mx="auto"
-        py={{ base: "200px", sm: "200px", md: "200px", xl: "210px" }}
+        pt="200px"
+        pb={paddingBottom ?? ""}
         // data-aos="fade-up"
       >
         <Heading

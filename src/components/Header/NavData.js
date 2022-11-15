@@ -4,8 +4,12 @@ const navLinks = [
     to: "about-me",
   },
   {
-    section: "Mis servicios",
+    section: "Servicios",
     to: "services",
+  },
+  {
+    section: "Terapia Sistemica",
+    to: "therapy",
   },
   {
     section: "Modalidad de trabajo",
