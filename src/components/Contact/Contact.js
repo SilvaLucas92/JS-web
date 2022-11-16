@@ -24,7 +24,9 @@ const Feature = ({ icon }) => {
 const Contact = () => {
   const { hasCopied, onCopy } = useClipboard("example@example.com");
   return (
-    <Section id="contact-me" title="Contacto" backgroundColor="#f7fafc" paddingBottom={'200px'}>
+    <Section id="contact-me" title="Contacto" 
+    // backgroundColor="#f7fafc" 
+    paddingBottom={'200px'}>
       <Text textAlign="center" textStyle="p" p={4} mb={10}>
         Si tenes alguna duda y queres escribirnos, te dejamo tos los medio para
         que te comuniques
@@ -32,7 +34,7 @@ const Contact = () => {
       <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
         <Feature
           icon={
-            <Tooltip label={"Send a messagge"} hasArrow>
+            <Tooltip label={"Enviame un mensaje"} hasArrow>
               <IconButton
                 as="a"
                 aria-label="whatsapp"
@@ -42,7 +44,8 @@ const Contact = () => {
                 fontSize="4xl"
                 icon={<BsWhatsapp />}
                 _hover={{
-                  bg: "#4FD1C5",
+                  bg: '#319795',
+                  color:'white'
                 }}
                 isRound
               />
@@ -52,7 +55,7 @@ const Contact = () => {
         <Feature
           icon={
             <Tooltip
-              label={hasCopied ? "Email Copied!" : "Copy Email"}
+              label={hasCopied ? "Email copiado!" : "Copiar Email"}
               closeOnClick={false}
               hasArrow
             >
@@ -63,7 +66,8 @@ const Contact = () => {
                 fontSize="4xl"
                 icon={<AiOutlineMail />}
                 _hover={{
-                  bg: "#4FD1C5",
+                  bg: '#319795',
+                  color:'white'
                 }}
                 onClick={onCopy}
                 isRound
@@ -73,7 +77,7 @@ const Contact = () => {
         />
         <Feature
           icon={
-            <Tooltip label={"See where am I!"} hasArrow>
+            <Tooltip label={"Direccion consultorio"} hasArrow>
               <IconButton
                 aria-label="gps"
                 as="a"
@@ -83,7 +87,8 @@ const Contact = () => {
                 fontSize="4xl"
                 icon={<GoLocation />}
                 _hover={{
-                  bg: "#4FD1C5",
+                  bg: '#319795',
+                  color:'white'
                 }}
                 isRound
               />

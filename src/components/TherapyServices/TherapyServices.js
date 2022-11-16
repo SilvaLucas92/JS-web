@@ -41,14 +41,8 @@ function TherapyServices() {
                 }}
                 textStyle="text"
               >
-                Un espacio destinado a profesionales de la salud mental que
-                estén interesados en supervisar su caso desde una perspectiva
-                sistémica. No es excluyente que sean terapeutas que trabajen
-                desde este marco teórico, puede que no lo sean y se construya un
-                espacio de intercambio desde su disciplina y desde la sistémica
-                que pueda ampliar y enriquecer la lectura, la orientación y las
-                intervenciones del tratamiento que se esté realizando. Las
-                supervisiones pueden ser en forma presencial o virtual.
+                Atención online y presencial a Niños, Adolescentes y Adultos,
+                Familias y Parejas con Orientación Sistémica.
               </Text>
             </Box>
             <Box w="full" h="full" py={48} bg="gray.200"></Box>
