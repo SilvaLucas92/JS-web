@@ -13,7 +13,7 @@ function TherapyServices() {
               base: 1,
               lg: 2,
             }}
-            mb={24}
+            mb={5}
             spacingY={{
               base: 10,
               md: 15,
@@ -60,7 +60,7 @@ function TherapyServices() {
               lg: 2,
             }}
             flexDirection="column-reverse"
-            mb={24}
+            mb={5}
             spacingY={{
               base: 10,
               md: 15,
@@ -83,7 +83,7 @@ function TherapyServices() {
                   base: "center",
                   md: "left",
                 }}
-              > 
+              >
                 Supervisiones
               </chakra.h2>
               <Text

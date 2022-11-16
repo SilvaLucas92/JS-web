@@ -1,4 +1,4 @@
-import { Stack, SimpleGrid, Text, Icon } from "@chakra-ui/react";
+import { Stack, SimpleGrid, Text, Icon, chakra } from "@chakra-ui/react";
 import Section from "../Section/Section";
 import { BsSearch } from "react-icons/bs";
 import { MdOutlineGpsFixed } from "react-icons/md";
@@ -9,15 +9,9 @@ const Feature = ({ title, text, icon }) => {
       {/* <Flex w={"full"}  mb={1}>
         {icon}
       </Flex> */}
-      <Text
-        as="h3"
-        color="#2d3748"
-        fontWeight="semibold"
-        my={4}
-        fontSize={[20, 22, 24]}
-      >
+      <chakra.h2 fontSize={"3xl"} my={4}>
         {title}
-      </Text>
+      </chakra.h2>
       <Text textStyle="text">{text}</Text>
     </Stack>
   );

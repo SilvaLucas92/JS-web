@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { Box, Heading } from "@chakra-ui/react";
+import { Box, chakra } from "@chakra-ui/react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 const Section = ({ title, id, backgroundColor, children, paddingBottom }) => {
@@ -20,14 +20,7 @@ const Section = ({ title, id, backgroundColor, children, paddingBottom }) => {
         pb={paddingBottom ?? ""}
         // data-aos="fade-up"
       >
-        <Heading
-          as="h2"
-          color="#2d3748"
-          textAlign="center"
-          mb={"50px"}
-          size={"2xl"}
-          fontWeight="semibold"
-        >
+        <chakra.h2 textStyle={"h2"}>
           {title ? title : ""}
           <Box
             borderTop="2px"
@@ -36,7 +29,7 @@ const Section = ({ title, id, backgroundColor, children, paddingBottom }) => {
             mx="auto"
             mt={2}
           />
-        </Heading>
+        </chakra.h2>
         {children}
       </Box>
     </Box>

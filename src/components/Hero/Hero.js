@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, chakra, Flex, VStack } from "@chakra-ui/react";
+import "@fontsource/inter"
 const HeroPr = () => {
   return (
     <Box bg="#fffffe" id="hero" w="100%">
@@ -47,6 +48,7 @@ const HeroPr = () => {
                 }}
                 fontWeight="extrabold"
                 color="#319795"
+                fontFamily='inter, sans-serif'
               >
                 Psicólogo Clínico
               </chakra.h2>

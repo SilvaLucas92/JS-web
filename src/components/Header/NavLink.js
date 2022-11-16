@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 function Links({ link, drawerOpen, onClose }) {
   return (
     <div>
-      <Button m={2} variant="link" size="lg">
+      <Button m={2} variant="ghost" size="md">
         <Link
           to={link.to}
           spy={true}

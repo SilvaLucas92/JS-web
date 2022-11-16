@@ -1,33 +1,45 @@
 import { extendTheme } from "@chakra-ui/react";
-import "@fontsource/poppins"
-import "@fontsource/roboto"
-import "@fontsource/open-sans"
+import "@fontsource/inter"
+import "@fontsource/raleway"
+
 const theme = extendTheme({
   
   fonts: {
-    body: 'roboto, poppins, open-sans',
-    heading: 'roboto, poppins, open-sans',
+    body: 'raleway, sans-serif',
+    heading: 'raleway, sans-serif',
   },
   textStyles: {
     p: {
+      fontFamily:'inter, sans-serif',
       fontSize: {
-        base: "16px",
+        base: "18px",
         md: "18px",
         lg: "20px",
         xl: "22px",
       },
-      opacity: "0.7",
-      letterSpacing: "wider",
+      opacity: "0.7"
     },
     text: {
+      fontFamily:'inter, sans-serif',
       fontSize: {
-        base: "15px",
+        base: "16px",
         md: "16px",
         lg: "18px",
         xl: "20px",
       },
-      opacity: "0.7",
-      letterSpacing: "wider",
+      opacity: "0.7"
+    },
+    h2: {
+      fontSize: {
+        base: "34px",
+        md: "36px",
+        lg: "48px",
+        xl: "50px",
+      },
+      color: "#2d3748",
+      textAlign: "center",
+      mb: "50px",
+      fontWeight: "semibold"
     }
   }
 });
