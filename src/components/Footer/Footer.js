@@ -6,10 +6,10 @@ const Footer = () => {
     <Flex
       justifyContent="center"
       alignItems="center"
-      w="90%"
+      w="100%"
       mx="auto"
       h={50}
-      backgroundColor="#f7fafc"
+
     >
       <Text alignItems="center" color="gray.500">
         Developed by Lucas Silva.

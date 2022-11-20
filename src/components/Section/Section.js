@@ -23,7 +23,7 @@ const Section = ({ title, id, backgroundColor, children, paddingBottom }) => {
         <chakra.h2 textStyle={"h2"}>
           {title ? title : ""}
           <Box
-            borderTop="2px"
+            borderTop="4px"
             color="rgb(49 151 149)"
             w="10%"
             mx="auto"

@@ -24,9 +24,13 @@ const Feature = ({ icon }) => {
 const Contact = () => {
   const { hasCopied, onCopy } = useClipboard("example@example.com");
   return (
-    <Section id="contact-me" title="Contacto" 
-    // backgroundColor="#f7fafc" 
-    paddingBottom={'200px'}>
+    <Section
+      id="contact-me"
+      title="Contacto"
+      backgroundColor="#f7fafc"
+      paddingBottom={"200px"}
+      borderBottomRadius
+    >
       <Text textAlign="center" textStyle="p" p={4} mb={10}>
         Si tenes alguna duda y queres escribirnos, te dejamo tos los medio para
         que te comuniques
@@ -44,8 +48,8 @@ const Contact = () => {
                 fontSize="4xl"
                 icon={<BsWhatsapp />}
                 _hover={{
-                  bg: '#319795',
-                  color:'white'
+                  bg: "#319795",
+                  color: "white",
                 }}
                 isRound
               />
@@ -66,8 +70,8 @@ const Contact = () => {
                 fontSize="4xl"
                 icon={<AiOutlineMail />}
                 _hover={{
-                  bg: '#319795',
-                  color:'white'
+                  bg: "#319795",
+                  color: "white",
                 }}
                 onClick={onCopy}
                 isRound
@@ -87,8 +91,8 @@ const Contact = () => {
                 fontSize="4xl"
                 icon={<GoLocation />}
                 _hover={{
-                  bg: '#319795',
-                  color:'white'
+                  bg: "#319795",
+                  color: "white",
                 }}
                 isRound
               />

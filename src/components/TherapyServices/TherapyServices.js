@@ -1,17 +1,17 @@
 import React from "react";
 import Section from "../Section/Section";
-import { Flex, Box, Text, chakra, SimpleGrid } from "@chakra-ui/react";
-
+import { Flex, Box, Text, chakra, SimpleGrid, Image } from "@chakra-ui/react";
+import img from "./img.png";
 function TherapyServices() {
   return (
-    <Section id="services" title="Mis servicios">
+    <Section id="services" title="Mis servicios" >
       <Flex w="full" justifyContent="center" alignItems="center">
         <Box mx="auto">
           <SimpleGrid
             alignItems="start"
             columns={{
               base: 1,
-              lg: 2,
+              md: 2,
             }}
             mb={5}
             spacingY={{
@@ -26,11 +26,12 @@ function TherapyServices() {
             <Box>
               <chakra.h2
                 mb={4}
-                fontSize={"3xl"}
+                fontSize={"2xl"}
                 textAlign={{
                   base: "center",
                   md: "left",
                 }}
+                fontWeight= "semibold"
               >
                 Tratamientos psicológicos
               </chakra.h2>
@@ -45,13 +46,15 @@ function TherapyServices() {
                 Familias y Parejas con Orientación Sistémica.
               </Text>
             </Box>
-            <Box w="full" h="full" py={48} bg="gray.200"></Box>
+            <Box alignItems={"center"}>
+              <Image src={img} w="100%" maxH={"416px"} px={{ md: "15px" }} />
+            </Box>
           </SimpleGrid>
           <SimpleGrid
             alignItems="center"
             columns={{
               base: 1,
-              lg: 2,
+              md: 2,
             }}
             flexDirection="column-reverse"
             mb={5}
@@ -67,16 +70,17 @@ function TherapyServices() {
             <Box
               order={{
                 base: "initial",
-                lg: 2,
+                md: 2,
               }}
             >
               <chakra.h2
                 mb={4}
-                fontSize={"3xl"}
+                fontSize={"2xl"}
                 textAlign={{
                   base: "center",
                   md: "left",
                 }}
+                fontWeight= "semibold"
               >
                 Supervisiones
               </chakra.h2>
@@ -97,7 +101,9 @@ function TherapyServices() {
                 supervisiones pueden ser en forma presencial o virtual.
               </Text>
             </Box>
-            <Box w="full" h="full" py={48} bg="gray.200"></Box>
+            <Box alignItems={"center"}>
+              <Image src={img} w="100%" maxH={"416px"} px={{ md: "15px" }} />
+            </Box>
           </SimpleGrid>
         </Box>
       </Flex>

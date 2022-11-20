@@ -4,7 +4,7 @@ import julio from "./julio.jpeg";
 
 const AboutMe = () => {
   return (
-    <Section title="Sobre mí" id="about-me" bg="#f7fafc">
+    <Section title="Sobre mí" id="about-me" backgroundColor="#f7fafc" paddingbottom='100px'>
       <Center>
         <Image
           borderRadius="full"

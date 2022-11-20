@@ -51,8 +51,7 @@ const NavBar = () => {
               fontSize={22}
               isRound="true"
               backgroundColor="#ffffff"
-              colorScheme="teal"
-              variant="outline"
+              color="#2b2c34"
               _hover={{ cursor: "pointer" }}
             />
           </Flex>

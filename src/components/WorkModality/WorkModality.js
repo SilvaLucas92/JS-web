@@ -9,7 +9,7 @@ const Feature = ({ title, text, icon }) => {
       {/* <Flex w={"full"}  mb={1}>
         {icon}
       </Flex> */}
-      <chakra.h2 fontSize={"3xl"} my={4}>
+      <chakra.h2 fontSize={"2xl"} my={4} fontWeight= "semibold">
         {title}
       </chakra.h2>
       <Text textStyle="text">{text}</Text>
@@ -22,7 +22,7 @@ const Modalidad = () => {
     <Section
       id="WorkModality"
       title="Modalidad de trabajo"
-      // backgroundColor="#f7fafc"
+      backgroundColor="#f7fafc"
     >
       <SimpleGrid
         columns={{ base: 1, lg: 3 }}
