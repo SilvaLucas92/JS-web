@@ -47,10 +47,6 @@ const Contact = () => {
                 size="lg"
                 fontSize="4xl"
                 icon={<BsWhatsapp />}
-                _hover={{
-                  bg: "#319795",
-                  color: "white",
-                }}
                 isRound
               />
             </Tooltip>
@@ -69,10 +65,6 @@ const Contact = () => {
                 size="lg"
                 fontSize="4xl"
                 icon={<AiOutlineMail />}
-                _hover={{
-                  bg: "#319795",
-                  color: "white",
-                }}
                 onClick={onCopy}
                 isRound
               />
@@ -90,10 +82,6 @@ const Contact = () => {
                 size="lg"
                 fontSize="4xl"
                 icon={<GoLocation />}
-                _hover={{
-                  bg: "#319795",
-                  color: "white",
-                }}
                 isRound
               />
             </Tooltip>

@@ -29,6 +29,16 @@ const theme = extendTheme({
       },
       opacity: "0.7"
     },
+    textMod: {
+      fontFamily:'inter, sans-serif',
+      fontSize: {
+        base: "14px",
+        md: "14px",
+        lg: "16px",
+        xl: "18px",
+      },
+      opacity: "0.7"
+    },
     h2: {
       fontSize: {
         base: "34px",
