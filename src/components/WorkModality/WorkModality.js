@@ -9,7 +9,6 @@ const Modalidad = () => {
     <Section
       id="WorkModality"
       title="Modalidad de trabajo"
-      backgroundColor="#f7fafc"
     >
       <SimpleGrid
         columns={1}

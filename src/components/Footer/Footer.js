@@ -9,7 +9,6 @@ const Footer = () => {
       w="100%"
       mx="auto"
       h={50}
-
     >
       <Text alignItems="center" color="gray.500">
         Developed by Lucas Silva.

@@ -19,7 +19,7 @@ function Feature({ title, text, number, borderbottom, bordertop }){
               {title}
             </chakra.h2>
           </Box>
-          <Text textStyle="textMod">{text}</Text> 
+          <Text textStyle="text">{text}</Text> 
         </VStack>
       </HStack>
     );

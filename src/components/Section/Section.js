@@ -2,14 +2,14 @@ import { useEffect } from "react";
 import { Box, chakra } from "@chakra-ui/react";
 import Aos from "aos";
 import "aos/dist/aos.css";
-const Section = ({ title, id, backgroundColor, children, paddingBottom }) => {
+const Section = ({ title, id, children, paddingBottom }) => {
   // useEffect(() => {
   //   Aos.init({ duration: 2000 });
   // }, []);
   return (
     <Box
       id={id}
-      bg={backgroundColor ? backgroundColor : "white"}
+      bg={"white"}
       as="section"
       w="full"
     >

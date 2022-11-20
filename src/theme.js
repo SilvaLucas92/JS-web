@@ -22,16 +22,6 @@ const theme = extendTheme({
     text: {
       fontFamily:'inter, sans-serif',
       fontSize: {
-        base: "16px",
-        md: "16px",
-        lg: "18px",
-        xl: "20px",
-      },
-      opacity: "0.7"
-    },
-    textMod: {
-      fontFamily:'inter, sans-serif',
-      fontSize: {
         base: "14px",
         md: "14px",
         lg: "16px",
@@ -46,7 +36,7 @@ const theme = extendTheme({
         lg: "48px",
         xl: "50px",
       },
-      color: "#2d3748",
+      color: "black",
       textAlign: "center",
       mb: "50px",
       fontWeight: "semibold"

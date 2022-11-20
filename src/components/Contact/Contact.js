@@ -27,7 +27,6 @@ const Contact = () => {
     <Section
       id="contact-me"
       title="Contacto"
-      backgroundColor="#f7fafc"
       paddingBottom={"200px"}
       borderBottomRadius
     >
