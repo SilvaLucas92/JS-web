@@ -8,15 +8,16 @@ const Section = ({ title, id, children, paddingBottom }) => {
         pt="200px"
         pb={paddingBottom ?? ""}
       >
-        <chakra.h2 textStyle={"h2"}>
+        <chakra.h2 textStyle={"h2"} color='#2b2c34'>
           {title ? title : ""}
-          {/* <Box
+          <Box
             borderTop="4px"
-            color="rgb(49 151 149)"
+            // color="rgb(49 151 149)"
+            color='#29539b'
             w="10%"
             mx="auto"
             mt={2}
-          /> */}
+          />
         </chakra.h2>
         {children}
       </Box>

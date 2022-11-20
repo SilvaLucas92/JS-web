@@ -28,7 +28,10 @@ function ScrollBtn() {
   return (
     <>
       <Button
-        colorScheme="teal"
+        // colorScheme="teal"
+        bg='#29539b'
+        bgGradient='linear(to-l, #1e3b70, #29539b)'
+        _hover={{ bg: '#29539b' }}
         bottom={BOTTOM}
         height={68}
         opacity={hasScrolled ? "1" : "0"}
@@ -38,7 +41,7 @@ function ScrollBtn() {
         width={68}
         onClick={scrollToTop}
       >
-        <Icon fontSize="25px" as={AiOutlineArrowUp} />
+        <Icon color='white' fontSize="25px" as={AiOutlineArrowUp} />
       </Button>
     </>
   );

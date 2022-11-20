@@ -47,8 +47,10 @@ const HeroPr = () => {
                   md: "5xl",
                 }}
                 fontWeight="extrabold"
-                color="#319795"
+                // color="#319795"
                 fontFamily='inter, sans-serif'
+                bgGradient='linear(to-l, #1e3b70, #29539b)'
+                bgClip='text'
               >
                 Psicólogo Clínico
               </chakra.h2>

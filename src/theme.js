@@ -12,10 +12,10 @@ const theme = extendTheme({
     p: {
       fontFamily:'inter, sans-serif',
       fontSize: {
-        base: "18px",
-        md: "18px",
-        lg: "20px",
-        xl: "22px",
+        base: "16px",
+        md: "16px",
+        lg: "18px",
+        xl: "20px",
       },
       opacity: "0.7"
     },

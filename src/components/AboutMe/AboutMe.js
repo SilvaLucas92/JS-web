@@ -18,8 +18,7 @@ const AboutMe = () => {
       <Text p={4} textStyle="p" textAlign="center">
         Movilizado por deseo de acompañar a las personas a lograr una mejor
         calidad de vida, atiendo en centros de salud integrales y en mi
-        consultorio privado.<br></br>
-        Me gusta leer, escribir y el cine.<br></br>
+        consultorio privado. Me gusta leer, escribir y el cine.<br></br>
         Convencido de que siempre en el problema, se encuentra la solución.
       </Text>
     </Section>
