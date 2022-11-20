@@ -2,11 +2,7 @@ import { Text } from "@chakra-ui/react";
 import Section from "../Section/Section";
 function Therapy() {
   return (
-    <Section
-      id="therapy"
-      title="¿Qué es la Terapia Sistémica?"
-      backgroundColor="#f7fafc"
-    >
+    <Section id="therapy" title="¿Qué es la Terapia Sistémica?">
       <Text p={4} textStyle="p" textAlign="center">
         La terapia sistémica es un enfoque psicoterapéutico cuyo objeto de
         estudio y campo de intervención son las interacciones que se dan en todo

@@ -4,7 +4,7 @@ import { Flex, Box, Text, chakra, SimpleGrid, Image } from "@chakra-ui/react";
 import img from "./img.png";
 function TherapyServices() {
   return (
-    <Section id="services" title="Mis servicios" >
+    <Section id="services" title="Mis servicios">
       <Flex w="full" justifyContent="center" alignItems="center">
         <Box mx="auto">
           <SimpleGrid
@@ -31,7 +31,7 @@ function TherapyServices() {
                   base: "center",
                   md: "left",
                 }}
-                fontWeight= "semibold"
+                fontWeight="semibold"
               >
                 Tratamientos psicológicos
               </chakra.h2>
@@ -80,7 +80,7 @@ function TherapyServices() {
                   base: "center",
                   md: "left",
                 }}
-                fontWeight= "semibold"
+                fontWeight="semibold"
               >
                 Supervisiones
               </chakra.h2>

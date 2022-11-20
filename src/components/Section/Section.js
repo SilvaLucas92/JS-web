@@ -1,24 +1,12 @@
-import { useEffect } from "react";
 import { Box, chakra } from "@chakra-ui/react";
-import Aos from "aos";
-import "aos/dist/aos.css";
 const Section = ({ title, id, children, paddingBottom }) => {
-  // useEffect(() => {
-  //   Aos.init({ duration: 2000 });
-  // }, []);
   return (
-    <Box
-      id={id}
-      bg={"white"}
-      as="section"
-      w="full"
-    >
+    <Box id={id} bg={"white"} as="section" w="full">
       <Box
         w={{ base: "90%", md: "80%", xl: "75%" }}
         mx="auto"
         pt="200px"
         pb={paddingBottom ?? ""}
-        // data-aos="fade-up"
       >
         <chakra.h2 textStyle={"h2"}>
           {title ? title : ""}

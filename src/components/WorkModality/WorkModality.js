@@ -1,15 +1,9 @@
-import {
-  SimpleGrid,
-  Icon,
-} from "@chakra-ui/react";
+import { SimpleGrid } from "@chakra-ui/react";
 import Section from "../Section/Section";
 import Feature from "./Feature";
 const Modalidad = () => {
   return (
-    <Section
-      id="WorkModality"
-      title="Modalidad de trabajo"
-    >
+    <Section id="WorkModality" title="Modalidad de trabajo">
       <SimpleGrid
         columns={1}
         spacing={5}
@@ -40,7 +34,7 @@ const Modalidad = () => {
             "Por último, tenemos la etapa de seguimiento que se trata de acompañar al paciente, a la pareja o la familia luego de que se haya resuelto el motivo de consulta. Se trata de unas últimas sesiones donde se conversa sobre los logros alcanzados y se piensan estrategias para la prevención de recaídas. Se les informa a los consultantes que una terapia no soluciona todos los problemas, pero si puede solucionar algunos y que esta experiencia satisfactoria puede ser la base para que la persona, la pareja o la familia puedan resolver sus problemas futuros por sí misma.    "
           }
           number="03"
-        borderbottom
+          borderbottom
         />
       </SimpleGrid>
     </Section>

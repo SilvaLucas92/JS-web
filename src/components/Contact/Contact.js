@@ -30,7 +30,7 @@ const Contact = () => {
       paddingBottom={"200px"}
       borderBottomRadius
     >
-      <Text textAlign="center" textStyle="p" p={4} mb={10}>
+      <Text textAlign="center" textStyle="p" p={4} mb="50px">
         Si tenes alguna duda y queres escribirnos, te dejamo tos los medio para
         que te comuniques
       </Text>
